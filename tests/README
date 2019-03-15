@@ -1,0 +1,15 @@
+Format of chr22.matrix
+first line include two numbers: read number and snp number
+other lines (each line represent a read): this read include how many fragments, read ID, start covered site, binary fragments, score of each sites  
+
+
+You can download HAPCUT2, using extractHAIRS code extract binary matrix from alignment
+
+For example: 
+/home/yulin/liyanbo/Tools/HapCUT2/build/extractHAIRS --ONT 1 --bam chr22.filter.bam --VCF NA12878_hg38_VCFs/chr22.hg38.vcf --out chr22.matrix --ref chr22.fa 
+
+chr22.filter.bam is alignment between nanopore reads and reference genome
+vcf is a set of snp 
+chr22.fa is reference genome
+
+
