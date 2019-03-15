@@ -1,6 +1,7 @@
 # Haplotype-phasing
 
-input: chr22.matrix format see tests
+input: chr22.matrix(snp binary matrix) format see tests
+
 output: chr22_post_haplotype
 
 
