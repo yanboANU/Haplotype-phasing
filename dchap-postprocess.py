@@ -5,7 +5,7 @@ import argparse
 
 parser = argparse.ArgumentParser(description="")
 
-parser.add_argument('--filtered-reads', help='path to filtered reads file', required=True)
+parser.add_argument('--parsed-reads', help='path to reads file', required=True)
 parser.add_argument('--assignments', help='reads to the parent of origin', required=True)
 parser.add_argument('--blocks', required=True)
 parser.add_argument('--corrected-blocks', required=True)
@@ -15,7 +15,7 @@ args = parser.parse_args()
 #############################################################################
 
 # figure out the number of positions to phase:
-with open(args.filtered_reads) as f:
+with open(args.parsed_reads) as f:
     num_reads, num_positions = (int(x) for x in f.readline().split())
 start, end = 1, num_positions
 
@@ -39,7 +39,7 @@ def read_assignment(filename):
     return block     
                 
 
-def read_filtered_reads(filename):
+def read_parsed_reads(filename):
     readsStart = {}
     readsSeq = {}
     #with open(args.filtered_reads) as read_file:
@@ -86,7 +86,7 @@ new_blocks = open(args.corrected_blocks, 'w')
 with open(args.blocks) as f:
     count = 0
     blockAssign = read_assignment(args.assignments)
-    readsStart, readsSeq = read_filtered_reads(args.filtered_reads)
+    readsStart, readsSeq = read_parsed_reads(args.parsed_reads)
     for line in f:
         if line.startswith('***'):
             new_blocks.write(line)
