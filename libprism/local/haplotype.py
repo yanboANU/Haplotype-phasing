@@ -51,7 +51,7 @@ class Haplotype: # struct
             index += 1
         return ans  
 
-    def equal(self, h):    #  inside = function, I don't know which one
+    def equal(self, h):    #  equal inside = function
         self.set_seq(h.seq)
         self.left_clouds = h.left_clouds
         self.right_clouds = h.right_clouds
@@ -131,9 +131,6 @@ class Haplotype: # struct
         self.clouds = self.get_clouds_part_region(clouds_at_index, start, end)
         self.left_clouds = set()
         self.right_clouds = set()
-        #print self.start, self.end
-        #print self.seq
-        #print "check assign"            
         for c in self.clouds:
             s0 = c.seq
             s1 = tools.list_reverse(s0)
@@ -141,11 +138,6 @@ class Haplotype: # struct
             #print c.name
             d02 = tools.hamming_distance(s0, s2)
             d12 = tools.hamming_distance(s1, s2)
-            #if start <= 28307 and end > 28307: 
-                #print c.name, c[28307-1:c.end+1], d02, d12
-                #print c.start, c.end, c.seq
-                #print s0, s1, s2
-            #print s0, s1, s2, d02, d12
             if  d02 < d12:
                 self.left_clouds.add(c)    
             elif d02 > d12: 
@@ -181,8 +173,6 @@ class Haplotype: # struct
         return self.calc_MEC()
         '''
         return self.assign_clouds_part_region(clouds_at_index, self.start, self.end)
-        #print self.left_clouds
-        #print self.right_clouds
    
     def deal_unsure_clouds(self):
         print "deal unsure clouds" 
@@ -213,15 +203,11 @@ class Haplotype: # struct
     # update clouds is useful or not
     def update_clouds(self, left_kmer, kmers): # kmers: key is kmer, value is clouds(reads)
         right_kmer = tools.bool_reverse(left_kmer)
-        #print left_kmer, right_kmer
-        #print kmers
         for key in kmers:
             if tools.hamming_distance(key, left_kmer) < tools.hamming_distance(key, right_kmer):
                 self.left_clouds.update(kmers[key])
             elif tools.hamming_distance(key, left_kmer) > tools.hamming_distance(key, right_kmer):
                 self.right_clouds.update(kmers[key])
-        #print self.left_clouds
-        #print self.right_clouds
 
     def set_seq(self, seq):
         self.seq = seq

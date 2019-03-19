@@ -33,7 +33,7 @@ def sorted_map_value_len(m, R=True):
 
 
 ###################
-# tuple (int) module (in python, this data structure is dict)
+# tuple (int) module 
 ###################
 
 def is_bool_reverse(s1, s2): # s1=(0,1) s2=(1,0)
@@ -169,7 +169,6 @@ def bin_length(i, l):
     ans = []
     for ele in s:
         ans.append( int(ele) )
-   
     left = l - l1
     for i in range(0, left):
         ans.insert(0, 0)
@@ -195,7 +194,7 @@ def enumerate_01_list(l):
 
 #######################
 # 00011110000000
-# 00011100000000    break into 2 segs
+# 00011100000000    break into 2 segments
 # 00011101111111
 #######################
 
@@ -208,14 +207,11 @@ def divide_condense_mutiple_list(seqs, segments, start):
         return segments
 
     for i in range(seqNum):
-        #print type(s), type(s[0])
-        #sys.exit()
         if seqs[i][0] == 1:
             seqs[i] = list_reverse(seqs[i])
         elif seqs[i][0] < 0:
             print "error s[0] < 0"
             
-
     arr = np.sum(seqs, axis=0)    
     temp_seq = []
     l = len(seqs)
@@ -269,7 +265,7 @@ def divide_condense_mutiple_list(seqs, segments, start):
     divide_condense_mutiple_list(newSeqs , segments, newStart)
     return segments
 
-def pair_check_condense(seqs, start):
+def pair_check_condense(seqs, start, logging):
 
     seqLength = len(seqs[0])
     isolate = set()
@@ -282,22 +278,20 @@ def pair_check_condense(seqs, start):
     for j in range(1, seqLength):
         for i in range(seqLength - 1):
             if i in isolate and (i+j) in isolate:
-                #print i,i+j,
                 temp = []
                 flag = True
                 for seq in seqs:
                     curr = seq[i:i+1] + seq[i+j:i+j+1]
-                    #print curr,
                     if len(temp) == 0:
                         temp = seq[i:i+1] + seq[i+j:i+j+1]
                         continue
                     elif temp != curr and temp != list_reverse(curr):
                         flag = False
                 if flag:
-                    #print "remove", i+j
                     isolate.remove(i+j)
                     group[i].extend(group[i+j])
-    print "isolate:", isolate
+    #print "isolate:", isolate
+    logging.info("isolate: %s" % ''.join(str(e)+',' for e in list(isolate)))
     segments = []
     pre = sorted(group[0])[0] - 1
     for i in isolate:
@@ -306,23 +300,19 @@ def pair_check_condense(seqs, start):
         b = set(a)
         if len(a) == 1:
             continue
-
         if a[0] <= pre:
-            #print a[0], a[-1]
-            print "skip more than one positions", start+a[0], start+a[-1], "length", pre+1 - a[0]
-            print "change start at", pre+1 + start
+            logging.info("skip more than one positions, original region %s %s"  % (start+a[0], start+a[-1]) )
+            logging.info("new region %s %s"  % (start+pre+1, start+a[-1]) )
+            logging.info("skip length %s" % (pre+1 - a[0]) )
         for j in range(max(a[0], pre+1), a[-1]+1):
             if j in b:
                 temp.append(seqs[0][j])
             else:
                 temp.append(-1) 
-            #sys.exit()
-        #print a[0], a[-1]
         if len(temp) >0:
-            print "segment start end", start + max(a[0], pre+1), start + max(a[0], pre+1) + len(temp) -1
+            #print "segment start end", start + max(a[0], pre+1), start + max(a[0], pre+1) + len(temp) -1
             segments.append( (start + max(a[0], pre+1),  temp) )
         pre = max(a[-1], pre)
-        #print temp
     return segments   
 
 

@@ -1,5 +1,5 @@
 #!/usr/bin/python
-
+#this coide is downloaded from probhap
 """
 Functions for loading and pre-processing clouds for the local HMM.
 
@@ -173,8 +173,6 @@ def clouds_from_refhap(cloud_filename, data_start, data_end):
             print cloud.name, cloud.start
             print all_clouds[cloud.name].name, all_clouds[cloud.name].start
             print "a read more than one alignment"
-
-            
 
         all_clouds.add(cloud)
         # place it into our sets:

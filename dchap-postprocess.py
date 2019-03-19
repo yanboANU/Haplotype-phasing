@@ -5,7 +5,7 @@ import argparse
 
 parser = argparse.ArgumentParser(description="")
 
-parser.add_argument('--parsed-reads', help='path to reads file', required=True)
+parser.add_argument('--parsed-reads', help='path to parsed reads file', required=True)
 parser.add_argument('--assignments', help='reads to the parent of origin', required=True)
 parser.add_argument('--blocks', required=True)
 parser.add_argument('--corrected-blocks', required=True)
@@ -22,7 +22,6 @@ start, end = 1, num_positions
 def read_assignment(filename):
     block = dict()
     assignments = dict()
-    #with open(args.assignments) as f:
     with open(filename) as f:
         for line in f:
             if line.startswith("block"):
@@ -42,7 +41,6 @@ def read_assignment(filename):
 def read_parsed_reads(filename):
     readsStart = {}
     readsSeq = {}
-    #with open(args.filtered_reads) as read_file:
     with open(filename) as read_file:
         for line in read_file:
             fields = line.strip().split()
@@ -104,14 +102,10 @@ with open(args.blocks) as f:
             fields = line.split()
             j = int(fields[0])
             if consensus.get(j, -1) == 0:
-                #new_blocks.write('%d\t0\t1\t%s\t%s\t%s\n' % (j, fields[3], fields[4], fields[5]))
                 new_blocks.write('%d\t1\t0\n' % (j))
             elif consensus.get(j, -1) == 1:
-                #new_blocks.write('%d\t1\t0\t%s\t%s\t%s\n' % (j, fields[3], fields[4], fields[5]))
                 new_blocks.write('%d\t0\t1\n' % (j))
             else:
-                #new_blocks.write('%d\t-\t-\t%s\t%s\t%s\n' % (j, fields[3], fields[4], fields[5]))
                 new_blocks.write('%d\t-\t-\n' % (j))
-                #new_blocks.write('%d\t%s\t%s\n' % (j, fields[1], fields[2]))
 
 new_blocks.close()
