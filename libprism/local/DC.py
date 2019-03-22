@@ -86,7 +86,7 @@ class DC(object):
         #self.enumerate_length_threshold = 5 # trade-off between accuracy and time
 
         # 4 times reads length * snp rate    
-        self.enumerate_SNP_threshold = 20 # para, depend on different data set
+        self.enumerate_SNP_threshold = 40 # para, depend on different data set
         self.label_threshold = 1 #2 mean no reduce label, trick one
         self.same_MEC = False #False mean no trick two
         #self.same_MEC = True
