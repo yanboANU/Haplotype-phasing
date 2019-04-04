@@ -265,54 +265,83 @@ def divide_condense_mutiple_list(seqs, segments, start):
     divide_condense_mutiple_list(newSeqs , segments, newStart)
     return segments
 
-def pair_check_condense(seqs, start, logging):
+def pair_check_condense(seqs, start, regionStart, regionEnd, logging):
 
     seqLength = len(seqs[0])
     isolate = set()
     group = {}
-    for i in range(seqLength):
+
+    logging.info("regionStart, regionEnd: %s %s" % (regionStart, regionEnd))
+    if regionStart>start:
+        group[regionStart-1] = list()
+        isolate.add(regionStart-1) 
+        for i in range(start, regionStart):
+            group[regionStart-1].append(i)
+
+    if regionEnd+1 < start + seqLength:
+        group[regionEnd+1] = list()
+        isolate.add(regionEnd+1)
+        for i in range(regionEnd+1, start+seqLength):
+            group[regionEnd+1].append(i)
+
+    #for i in range(seqLength):
+    for i in range(regionStart, min(regionEnd+1, start+seqLength)):
         isolate.add(i)
         group[i] = list()
         group[i].append(i)
- 
-    for j in range(1, seqLength):
-        for i in range(seqLength - 1):
+
+    #for i in group:
+        #print i, group[i]
+
+    #print isolate
+    #for j in range(1, seqLength):
+        #for i in range(seqLength - 1):
+    for j in range(1, regionEnd + 1):
+        for i in range(regionStart-1, regionEnd+1):
+            if i+j > regionEnd+1:
+                break
             if i in isolate and (i+j) in isolate:
                 temp = []
                 flag = True
                 for seq in seqs:
-                    curr = seq[i:i+1] + seq[i+j:i+j+1]
+                    curr = seq[i-start : i +1 -start] + seq[i+j-start : i+j +1 -start]
                     if len(temp) == 0:
-                        temp = seq[i:i+1] + seq[i+j:i+j+1]
+                        temp = seq[i-start : i +1 -start] + seq[i+j-start :i+j +1 -start]
                         continue
                     elif temp != curr and temp != list_reverse(curr):
                         flag = False
                 if flag:
                     isolate.remove(i+j)
                     group[i].extend(group[i+j])
-    #print "isolate:", isolate
+
     logging.info("isolate: %s" % ''.join(str(e)+',' for e in list(isolate)))
     segments = []
-    pre = sorted(group[0])[0] - 1
-    for i in isolate:
+    if regionStart-1 in isolate:
+        pre = sorted(group[regionStart-1])[0] - 1
+    else:
+        pre = sorted(group[regionStart])[0] - 1
+    sortedIsolate = sorted(isolate)    
+    for i in sortedIsolate:
         a = sorted(group[i])
         temp = []
         b = set(a)
         if len(a) == 1:
             continue
         if a[0] <= pre:
-            logging.info("skip more than one positions, original region %s %s"  % (start+a[0], start+a[-1]) )
-            logging.info("new region %s %s"  % (start+pre+1, start+a[-1]) )
+            logging.info("skip more than one positions, original region %s %s"  % (a[0], a[-1]) )
+            logging.info("new region %s %s"  % (pre+1, a[-1]) )
             logging.info("skip length %s" % (pre+1 - a[0]) )
         for j in range(max(a[0], pre+1), a[-1]+1):
             if j in b:
-                temp.append(seqs[0][j])
+                temp.append(seqs[0][j-start])
             else:
                 temp.append(-1) 
         if len(temp) >0:
             #print "segment start end", start + max(a[0], pre+1), start + max(a[0], pre+1) + len(temp) -1
-            segments.append( (start + max(a[0], pre+1),  temp) )
+            segments.append( (max(a[0], pre+1),  temp) )
         pre = max(a[-1], pre)
+
+
     return segments   
 
 

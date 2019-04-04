@@ -64,7 +64,7 @@ class DC(object):
         return blocks        
 
     #def __init__(self, k, data_start, data_end, all_clouds, clouds_at_index, hmm): # all_clouds, a cloud list
-    def __init__(self, k, data_start, data_end, all_clouds, clouds_at_index, contigs_at_index): # all_clouds, a cloud list
+    def __init__(self, k, data_start, data_end, all_clouds, clouds_at_index, contigs_at_index, max_clouds_length): # all_clouds, a cloud list
         self.length = data_end - data_start + 1
         self.data_start = data_start # snp start no
         self.data_end = data_end     # snp end no     
@@ -80,13 +80,13 @@ class DC(object):
         # contigs_at_index, dict, key is snp np, value is cloud ID who span this SNP 0/1/-, ???
         #contigs_at_index = contigs_from_clouds(all_clouds, self.data_start, self.data_end)  # bug, because a read multiple flag 0/16
         #self.hmm = hmm
-        self.enumerate_length_threshold = 16 # trade-off between accuracy and time
-                                            # according to block size, how many reliable regions in a block
+        self.enumerate_length_threshold = 10 # trade-off between accuracy and time
+                                            # according to gap size, 
 
         #self.enumerate_length_threshold = 5 # trade-off between accuracy and time
 
         # 4 times reads length * snp rate    
-        self.enumerate_SNP_threshold = 40 # para, depend on different data set
+        self.enumerate_SNP_threshold = min(max_clouds_length, 40) # para, depend on different data set
         self.label_threshold = 1 #2 mean no reduce label, trick one
         self.same_MEC = False #False mean no trick two
         #self.same_MEC = True
@@ -249,14 +249,14 @@ class DC(object):
             return bestHaps, bestHaps # clouds updata in updata_clouds_support_and_calculate_MEC
         else:
             haps = list()
-            print "minimal MEC more than 1 region", start
+            print "minimal MEC more than 1 region: start, end", start, start + len(bestHaps[0].seq), len(bestHaps)
             seqs = [] 
             segments = []
             for h in bestHaps:
-                print h.seq
+                print h.seq # debug
                 seqs.append(h.seq)
             #print "running function divide condense"    
-            segments = tools.pair_check_condense(seqs, start, logging)
+            segments = tools.pair_check_condense(seqs, start, regionStart, regionEnd, logging)
             for s in segments:
                 print s
             '''    

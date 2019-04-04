@@ -1,0 +1,2119 @@
+Parsing Refhap file...
+Positions that can be phased: 22660
+init  k self.enumerate_length_threshold self.enumerate_SNP_threshold self.label_threshold self.same_MEC 
+('init', '2', 16, 20, 1, False)
+There are 324 blocks
+phasing block:  1 , region  3 7 length 5
+[0, 1, 1, 1, 0]
+phasing block:  2 , region  8 10 length 3
+[0, 0, 0]
+phasing block:  3 , region  11 12 length 2
+[0, 0]
+phasing block:  4 , region  13 14 length 2
+[0, 0]
+phasing block:  5 , region  15 18 length 4
+[0, 1, 0, 1]
+phasing block:  6 , region  19 20 length 2
+[0, 1]
+phasing block:  7 , region  21 24 length 4
+[0, 0, 1, 1]
+phasing block:  8 , region  25 26 length 2
+[0, 1]
+phasing block:  9 , region  27 38 length 12
+reliable rate:  0.583333333333
+enumerate prefix
+firstH len 7
+enumerate suffix
+lastH len 9
+block region 27 38 has 1 haplotype segements
+phasing block:  10 , region  39 77 length 39
+reliable rate:  0.820512820513
+merge count 1 haps number 8
+enumerate prefix
+firstH len 36
+enumerate suffix
+lastH len 39
+block region 39 77 has 1 haplotype segements
+phasing block:  11 , region  79 80 length 2
+in enumerate reads, reads Number 1
+[0, 0] 0
+phasing block:  12 , region  81 113 length 33
+reliable rate:  0.757575757576
+merge count 1 haps number 2
+enumerate prefix
+firstH len 27
+enumerate suffix
+lastH len 33
+block region 81 113 has 1 haplotype segements
+phasing block:  13 , region  114 126 length 13
+reliable rate:  0.846153846154
+enumerate prefix
+firstH len 11
+enumerate suffix
+lastH len 11
+minimal MEC more than 1 region 114
+[1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1]
+[1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0]
+(114, [1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1])
+(125, [0, 1])
+block region 114 126 has 2 haplotype segements
+phasing block:  14 , region  127 208 length 82
+reliable rate:  1.0
+merge count 1 haps number 3
+enumerate prefix
+firstH len 82
+enumerate suffix
+lastH len 82
+block region 127 208 has 1 haplotype segements
+phasing block:  15 , region  209 262 length 54
+reliable rate:  0.925925925926
+enumerate prefix
+firstH len 50
+enumerate suffix
+lastH len 54
+block region 209 262 has 1 haplotype segements
+phasing block:  16 , region  263 331 length 69
+reliable rate:  1.0
+merge count 1 haps number 3
+enumerate prefix
+firstH len 69
+enumerate suffix
+lastH len 69
+block region 263 331 has 1 haplotype segements
+phasing block:  17 , region  332 344 length 13
+reliable rate:  1.0
+enumerate prefix
+firstH len 13
+enumerate suffix
+lastH len 13
+block region 332 344 has 1 haplotype segements
+phasing block:  18 , region  345 399 length 55
+reliable rate:  0.981818181818
+merge count 1 haps number 3
+minimal MEC more than 1 region 345
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
+(345, [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1])
+enumerate prefix
+firstH len 55
+enumerate suffix
+lastH len 55
+block region 345 399 has 1 haplotype segements
+phasing block:  19 , region  400 481 length 82
+reliable rate:  0.987804878049
+merge count 1 haps number 3
+enumerate prefix
+firstH len 82
+enumerate suffix
+lastH len 82
+block region 400 481 has 1 haplotype segements
+phasing block:  20 , region  482 641 length 160
+reliable rate:  1.0
+merge count 1 haps number 3
+enumerate prefix
+firstH len 160
+enumerate suffix
+lastH len 160
+block region 482 641 has 1 haplotype segements
+phasing block:  21 , region  642 663 length 22
+reliable rate:  1.0
+enumerate prefix
+firstH len 22
+enumerate suffix
+lastH len 22
+block region 642 663 has 1 haplotype segements
+phasing block:  22 , region  664 921 length 258
+reliable rate:  0.996124031008
+merge count 1 haps number 6
+enumerate prefix
+firstH len 258
+enumerate suffix
+lastH len 258
+block region 664 921 has 1 haplotype segements
+phasing block:  23 , region  923 928 length 6
+[0, 0, 0, 0, 0, 0]
+phasing block:  24 , region  929 980 length 52
+reliable rate:  1.0
+merge count 1 haps number 2
+enumerate prefix
+firstH len 52
+enumerate suffix
+lastH len 52
+block region 929 980 has 1 haplotype segements
+phasing block:  25 , region  984 993 length 10
+reliable rate:  0.9
+enumerate prefix
+firstH len 9
+minimal MEC more than 1 region 984
+[0, 1, 1, 0, 1, 1, 1, 0, 1, 0]
+[1, 1, 1, 0, 1, 1, 1, 0, 1, 0]
+(985, [1, 1, 0, 1, 1, 1, 0, 1, 0])
+enumerate suffix
+lastH len 9
+block region 984 993 has 1 haplotype segements
+phasing block:  26 , region  994 1304 length 311
+reliable rate:  0.993569131833
+merge count 1 haps number 15
+enumerate prefix
+firstH len 311
+enumerate suffix
+lastH len 311
+block region 994 1304 has 1 haplotype segements
+phasing block:  27 , region  1305 1322 length 18
+reliable rate:  0.944444444444
+merge count 1 haps number 3
+enumerate prefix
+firstH len 18
+enumerate suffix
+lastH len 18
+block region 1305 1322 has 1 haplotype segements
+phasing block:  28 , region  1323 1429 length 107
+reliable rate:  0.981308411215
+merge count 1 haps number 5
+enumerate prefix
+firstH len 107
+enumerate suffix
+lastH len 107
+block region 1323 1429 has 1 haplotype segements
+phasing block:  29 , region  1431 1549 length 119
+reliable rate:  0.974789915966
+merge count 1 haps number 5
+enumerate prefix
+firstH len 119
+enumerate suffix
+lastH len 119
+block region 1431 1549 has 1 haplotype segements
+phasing block:  30 , region  1550 1567 length 18
+reliable rate:  0.944444444444
+merge count 1 haps number 3
+enumerate prefix
+firstH len 17
+enumerate suffix
+lastH len 18
+block region 1550 1567 has 1 haplotype segements
+phasing block:  31 , region  1568 1583 length 16
+reliable rate:  1.0
+merge count 1 haps number 3
+enumerate prefix
+firstH len 16
+enumerate suffix
+lastH len 16
+block region 1568 1583 has 1 haplotype segements
+phasing block:  32 , region  1584 1589 length 6
+[0, 1, 0, 1, 1, 0]
+phasing block:  33 , region  1591 1768 length 178
+reliable rate:  0.994382022472
+merge count 1 haps number 8
+minimal MEC more than 1 region 1591
+[0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0]
+(1591, [0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0, 0])
+enumerate prefix
+firstH len 178
+enumerate suffix
+lastH len 178
+block region 1591 1768 has 1 haplotype segements
+phasing block:  34 , region  1770 1773 length 4
+[0, 0, 0, 0]
+phasing block:  35 , region  1774 1784 length 11
+reliable rate:  0.909090909091
+merge count 1 haps number 2
+enumerate prefix
+firstH len 11
+enumerate suffix
+lastH len 11
+block region 1774 1784 has 1 haplotype segements
+phasing block:  36 , region  1786 1836 length 51
+reliable rate:  0.980392156863
+merge count 1 haps number 2
+enumerate prefix
+firstH len 51
+enumerate suffix
+lastH len 51
+block region 1786 1836 has 1 haplotype segements
+phasing block:  37 , region  1837 1927 length 91
+reliable rate:  0.978021978022
+merge count 1 haps number 5
+enumerate prefix
+firstH len 91
+enumerate suffix
+lastH len 91
+block region 1837 1927 has 1 haplotype segements
+phasing block:  38 , region  1928 1953 length 26
+reliable rate:  0.923076923077
+merge count 1 haps number 4
+enumerate prefix
+firstH len 25
+enumerate suffix
+lastH len 26
+block region 1928 1953 has 1 haplotype segements
+phasing block:  39 , region  1955 1956 length 2
+[0, 0]
+phasing block:  40 , region  1957 1960 length 4
+[0, 1, 1, 1]
+phasing block:  41 , region  1961 1969 length 9
+reliable rate:  1.0
+enumerate prefix
+firstH len 9
+enumerate suffix
+lastH len 9
+block region 1961 1969 has 1 haplotype segements
+phasing block:  42 , region  1970 1986 length 17
+reliable rate:  1.0
+merge count 1 haps number 3
+enumerate prefix
+firstH len 17
+enumerate suffix
+lastH len 17
+block region 1970 1986 has 1 haplotype segements
+phasing block:  43 , region  1987 1990 length 4
+[0, 0, 0, 0]
+phasing block:  44 , region  1991 2550 length 560
+reliable rate:  0.992857142857
+merge count 1 haps number 17
+enumerate prefix
+firstH len 560
+enumerate suffix
+lastH len 560
+block region 1991 2550 has 1 haplotype segements
+phasing block:  45 , region  2553 2609 length 57
+reliable rate:  0.964912280702
+merge count 1 haps number 4
+minimal MEC more than 1 region 2553
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+(2553, [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0])
+enumerate prefix
+firstH len 56
+enumerate suffix
+lastH len 56
+block region 2553 2609 has 1 haplotype segements
+phasing block:  46 , region  2610 2654 length 45
+reliable rate:  1.0
+enumerate prefix
+firstH len 45
+enumerate suffix
+lastH len 45
+block region 2610 2654 has 1 haplotype segements
+phasing block:  47 , region  2655 2756 length 102
+reliable rate:  0.990196078431
+merge count 1 haps number 6
+enumerate prefix
+firstH len 102
+enumerate suffix
+lastH len 102
+block region 2655 2756 has 1 haplotype segements
+phasing block:  48 , region  2757 2801 length 45
+reliable rate:  1.0
+merge count 1 haps number 6
+enumerate prefix
+firstH len 45
+enumerate suffix
+lastH len 45
+block region 2757 2801 has 1 haplotype segements
+phasing block:  49 , region  2802 2875 length 74
+reliable rate:  0.932432432432
+merge count 1 haps number 8
+enumerate prefix
+firstH len 73
+enumerate suffix
+lastH len 74
+block region 2802 2875 has 1 haplotype segements
+phasing block:  50 , region  2876 2987 length 112
+reliable rate:  0.910714285714
+merge count 1 haps number 11
+enumerate prefix
+firstH len 111
+enumerate suffix
+lastH len 112
+block region 2876 2987 has 1 haplotype segements
+phasing block:  51 , region  2988 3023 length 36
+reliable rate:  0.944444444444
+merge count 1 haps number 5
+enumerate prefix
+firstH len 34
+enumerate suffix
+lastH len 34
+block region 2988 3023 has 1 haplotype segements
+phasing block:  52 , region  3024 3025 length 2
+in enumerate reads, reads Number 1
+[1, 0] 0
+phasing block:  53 , region  3026 3029 length 4
+[0, 0, 0, 0]
+phasing block:  54 , region  3030 3031 length 2
+[0, 0]
+phasing block:  55 , region  3032 3043 length 12
+reliable rate:  1.0
+merge count 1 haps number 3
+enumerate prefix
+firstH len 12
+enumerate suffix
+lastH len 12
+block region 3032 3043 has 1 haplotype segements
+phasing block:  56 , region  3044 3045 length 2
+[0, 0]
+phasing block:  57 , region  3046 3057 length 12
+reliable rate:  0.833333333333
+merge count 1 haps number 3
+enumerate prefix
+firstH len 10
+enumerate suffix
+lastH len 11
+block region 3046 3057 has 1 haplotype segements
+phasing block:  58 , region  3058 3060 length 3
+minimal MEC more than 1 region 3058
+[0, 0, 0]
+[0, 1, 1]
+(3059, [0, 0])
+[0, 0, 0]
+[0, 1, 1]
+phasing block:  59 , region  3061 3068 length 8
+reliable rate:  1.0
+enumerate prefix
+firstH len 8
+enumerate suffix
+lastH len 8
+block region 3061 3068 has 1 haplotype segements
+phasing block:  60 , region  3069 3083 length 15
+reliable rate:  0.933333333333
+enumerate prefix
+firstH len 14
+enumerate suffix
+lastH len 15
+block region 3069 3083 has 1 haplotype segements
+phasing block:  61 , region  3084 3100 length 17
+reliable rate:  0.588235294118
+merge count 1 haps number 4
+enumerate prefix
+firstH len 16
+enumerate suffix
+lastH len 16
+block region 3084 3100 has 1 haplotype segements
+phasing block:  62 , region  3101 3102 length 2
+[0, 0]
+phasing block:  63 , region  3103 3349 length 247
+reliable rate:  0.801619433198
+merge count 1 haps number 30
+minimal MEC more than 1 region 3103
+[0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1]
+[0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1]
+(3103, [0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, -1, 0, 1, 1, 1, 1, 1, 1, 1])
+enumerate prefix
+firstH len 241
+enumerate suffix
+lastH len 241
+block region 3103 3349 has 1 haplotype segements
+phasing block:  64 , region  3350 3413 length 64
+reliable rate:  0.78125
+merge count 1 haps number 5
+enumerate prefix
+firstH len 52
+enumerate suffix
+lastH len 64
+block region 3350 3413 has 1 haplotype segements
+phasing block:  65 , region  3414 3415 length 2
+[0, 0]
+phasing block:  66 , region  3420 3618 length 199
+reliable rate:  0.989949748744
+merge count 1 haps number 6
+enumerate prefix
+firstH len 198
+enumerate suffix
+lastH len 198
+block region 3420 3618 has 1 haplotype segements
+phasing block:  67 , region  3619 3624 length 6
+[0, 1, 1, 0, 0, 1]
+phasing block:  68 , region  3625 3646 length 22
+reliable rate:  0.863636363636
+enumerate prefix
+firstH len 19
+enumerate suffix
+lastH len 22
+block region 3625 3646 has 1 haplotype segements
+phasing block:  69 , region  3647 3655 length 9
+reliable rate:  1.0
+enumerate prefix
+firstH len 9
+enumerate suffix
+lastH len 9
+block region 3647 3655 has 1 haplotype segements
+phasing block:  70 , region  3657 3659 length 3
+[0, 0, 0]
+phasing block:  71 , region  3660 3674 length 15
+reliable rate:  1.0
+enumerate prefix
+firstH len 15
+enumerate suffix
+lastH len 15
+block region 3660 3674 has 1 haplotype segements
+phasing block:  72 , region  3676 3697 length 22
+reliable rate:  0.954545454545
+merge count 1 haps number 3
+enumerate prefix
+firstH len 22
+enumerate suffix
+lastH len 22
+block region 3676 3697 has 1 haplotype segements
+phasing block:  73 , region  3698 3714 length 17
+reliable rate:  0.823529411765
+merge count 1 haps number 3
+enumerate prefix
+firstH len 15
+enumerate suffix
+lastH len 17
+block region 3698 3714 has 1 haplotype segements
+phasing block:  74 , region  3715 3716 length 2
+[0, 0]
+phasing block:  75 , region  3717 3793 length 77
+reliable rate:  0.987012987013
+merge count 1 haps number 7
+enumerate prefix
+firstH len 77
+enumerate suffix
+lastH len 77
+block region 3717 3793 has 1 haplotype segements
+phasing block:  76 , region  3794 3811 length 18
+reliable rate:  1.0
+merge count 1 haps number 3
+enumerate prefix
+firstH len 18
+enumerate suffix
+lastH len 18
+block region 3794 3811 has 1 haplotype segements
+phasing block:  77 , region  3812 3869 length 58
+reliable rate:  0.98275862069
+merge count 1 haps number 2
+enumerate prefix
+firstH len 57
+enumerate suffix
+lastH len 58
+block region 3812 3869 has 1 haplotype segements
+phasing block:  78 , region  3870 3907 length 38
+reliable rate:  0.973684210526
+merge count 1 haps number 2
+enumerate prefix
+firstH len 38
+enumerate suffix
+lastH len 38
+block region 3870 3907 has 1 haplotype segements
+phasing block:  79 , region  3908 3910 length 3
+[0, 1, 0]
+phasing block:  80 , region  3914 4043 length 130
+reliable rate:  0.969230769231
+merge count 1 haps number 9
+enumerate prefix
+firstH len 130
+enumerate suffix
+lastH len 130
+block region 3914 4043 has 1 haplotype segements
+phasing block:  81 , region  4044 4166 length 123
+reliable rate:  0.991869918699
+merge count 1 haps number 8
+enumerate prefix
+firstH len 122
+minimal MEC more than 1 region 4044
+[0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1]
+[1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1]
+(4045, [0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1])
+enumerate suffix
+lastH len 122
+block region 4044 4166 has 1 haplotype segements
+phasing block:  82 , region  4169 4170 length 2
+[0, 1]
+phasing block:  83 , region  4173 4291 length 119
+reliable rate:  0.991596638655
+merge count 1 haps number 4
+enumerate prefix
+firstH len 119
+enumerate suffix
+lastH len 119
+block region 4173 4291 has 1 haplotype segements
+phasing block:  84 , region  4292 4383 length 92
+reliable rate:  1.0
+merge count 1 haps number 2
+enumerate prefix
+firstH len 92
+enumerate suffix
+lastH len 92
+block region 4292 4383 has 1 haplotype segements
+phasing block:  85 , region  4384 4385 length 2
+[0, 1]
+phasing block:  86 , region  4386 4745 length 360
+reliable rate:  0.963888888889
+merge count 1 haps number 21
+minimal MEC more than 1 region 4386
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 1]
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0]
+(4386, [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1])
+(4742, [0, 0, 1, 1])
+merge count 2 haps number 2
+minimal MEC more than 1 region 4386
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 1]
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0]
+(4386, [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1])
+(4742, [0, 0, 1, 1])
+enumerate prefix
+firstH len 356
+enumerate suffix
+lastH len 4
+block region 4386 4745 has 2 haplotype segements
+phasing block:  87 , region  4746 4788 length 43
+reliable rate:  1.0
+merge count 1 haps number 2
+enumerate prefix
+firstH len 43
+enumerate suffix
+lastH len 43
+block region 4746 4788 has 1 haplotype segements
+phasing block:  88 , region  4790 4861 length 72
+reliable rate:  0.972222222222
+merge count 1 haps number 4
+enumerate prefix
+firstH len 72
+enumerate suffix
+lastH len 72
+block region 4790 4861 has 1 haplotype segements
+phasing block:  89 , region  4862 4867 length 6
+[0, 0, 0, 0, 0, 0]
+phasing block:  90 , region  4868 4871 length 4
+[0, 0, 0, 0]
+phasing block:  91 , region  4873 4875 length 3
+[0, 0, 0]
+phasing block:  92 , region  4876 4877 length 2
+[0, 0]
+phasing block:  93 , region  4878 5067 length 190
+reliable rate:  0.994736842105
+merge count 1 haps number 4
+enumerate prefix
+firstH len 189
+enumerate suffix
+lastH len 190
+block region 4878 5067 has 1 haplotype segements
+phasing block:  94 , region  5068 5074 length 7
+[0, 0, 1, 1, 1, 0, 1]
+phasing block:  95 , region  5077 5079 length 3
+[0, 1, 1]
+phasing block:  96 , region  5080 5103 length 24
+reliable rate:  0.958333333333
+enumerate prefix
+firstH len 23
+enumerate suffix
+lastH len 23
+block region 5080 5103 has 1 haplotype segements
+phasing block:  97 , region  5104 5105 length 2
+[0, 1]
+phasing block:  98 , region  5106 5185 length 80
+reliable rate:  0.9875
+merge count 1 haps number 2
+enumerate prefix
+firstH len 79
+enumerate suffix
+lastH len 79
+block region 5106 5185 has 1 haplotype segements
+phasing block:  99 , region  5186 5192 length 7
+[0, 1, 1, 0, 0, 1, 1]
+phasing block:  100 , region  5193 5222 length 30
+reliable rate:  0.966666666667
+merge count 1 haps number 2
+enumerate prefix
+firstH len 30
+enumerate suffix
+lastH len 30
+block region 5193 5222 has 1 haplotype segements
+phasing block:  101 , region  5223 5346 length 124
+reliable rate:  1.0
+merge count 1 haps number 3
+enumerate prefix
+firstH len 124
+enumerate suffix
+lastH len 124
+block region 5223 5346 has 1 haplotype segements
+phasing block:  102 , region  5347 5384 length 38
+reliable rate:  0.973684210526
+merge count 1 haps number 4
+minimal MEC more than 1 region 5347
+[0, 0, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 0]
+[0, 0, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1]
+(5347, [0, 0, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1])
+(5369, [0, 1, 1, 1, 1, 1, 1, 0])
+merge count 2 haps number 2
+minimal MEC more than 1 region 5347
+[0, 0, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0]
+[0, 0, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1]
+(5347, [0, 0, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1])
+(5369, [0, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0])
+enumerate prefix
+firstH len 22
+enumerate suffix
+lastH len 16
+block region 5347 5384 has 2 haplotype segements
+phasing block:  103 , region  5385 5406 length 22
+reliable rate:  1.0
+enumerate prefix
+firstH len 22
+enumerate suffix
+lastH len 22
+block region 5385 5406 has 1 haplotype segements
+phasing block:  104 , region  5407 5637 length 231
+reliable rate:  0.987012987013
+merge count 1 haps number 7
+enumerate prefix
+firstH len 229
+enumerate suffix
+lastH len 231
+block region 5407 5637 has 1 haplotype segements
+phasing block:  105 , region  5638 5656 length 19
+reliable rate:  1.0
+enumerate prefix
+firstH len 19
+enumerate suffix
+lastH len 19
+block region 5638 5656 has 1 haplotype segements
+phasing block:  106 , region  5658 5763 length 106
+reliable rate:  1.0
+merge count 1 haps number 2
+enumerate prefix
+firstH len 106
+enumerate suffix
+lastH len 106
+block region 5658 5763 has 1 haplotype segements
+phasing block:  107 , region  5764 6245 length 482
+reliable rate:  0.995850622407
+merge count 1 haps number 7
+minimal MEC more than 1 region 5764
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+(5764, [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1])
+enumerate prefix
+firstH len 482
+enumerate suffix
+lastH len 482
+block region 5764 6245 has 1 haplotype segements
+phasing block:  108 , region  6246 6247 length 2
+[0, 0]
+phasing block:  109 , region  6248 6393 length 146
+reliable rate:  0.986301369863
+merge count 1 haps number 4
+enumerate prefix
+firstH len 146
+enumerate suffix
+lastH len 146
+block region 6248 6393 has 1 haplotype segements
+phasing block:  110 , region  6394 6396 length 3
+[0, 0, 0]
+phasing block:  111 , region  6397 6398 length 2
+[0, 0]
+phasing block:  112 , region  6399 6851 length 453
+reliable rate:  0.993377483444
+merge count 1 haps number 16
+enumerate prefix
+firstH len 453
+enumerate suffix
+lastH len 453
+block region 6399 6851 has 1 haplotype segements
+phasing block:  113 , region  6856 6859 length 4
+[0, 0, 0, 0]
+phasing block:  114 , region  6860 6872 length 13
+reliable rate:  0.846153846154
+merge count 1 haps number 2
+minimal MEC more than 1 region 6860
+[0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+[0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0]
+(6860, [0, 1, 1, 1, 1])
+(6865, [1, 1, 1, 1, 1, 1, 1])
+merge count 2 haps number 2
+minimal MEC more than 1 region 6860
+[0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+[0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0]
+(6860, [0, 1, 1, 1, 1])
+(6865, [1, 1, 1, 1, 1, 1, 1])
+enumerate prefix
+firstH len 5
+enumerate suffix
+lastH len 7
+block region 6860 6872 has 2 haplotype segements
+phasing block:  115 , region  6873 6876 length 4
+[0, 0, 0, 0]
+phasing block:  116 , region  6877 6879 length 3
+minimal MEC more than 1 region 6877
+[0, 0, 0]
+[0, 0, 1]
+(6877, [0, 0])
+[0, 0, 0]
+[0, 0, 1]
+phasing block:  117 , region  6880 6887 length 8
+reliable rate:  0.875
+merge count 1 haps number 2
+enumerate prefix
+firstH len 8
+enumerate suffix
+lastH len 8
+block region 6880 6887 has 1 haplotype segements
+phasing block:  118 , region  6888 6890 length 3
+[0, 0, 0]
+phasing block:  119 , region  6891 6903 length 13
+reliable rate:  1.0
+merge count 1 haps number 2
+enumerate prefix
+firstH len 13
+enumerate suffix
+lastH len 13
+block region 6891 6903 has 1 haplotype segements
+phasing block:  120 , region  6904 6920 length 17
+reliable rate:  1.0
+merge count 1 haps number 2
+enumerate prefix
+firstH len 17
+enumerate suffix
+lastH len 17
+block region 6904 6920 has 1 haplotype segements
+phasing block:  121 , region  6922 6926 length 5
+[0, 1, 0, 1, 1]
+phasing block:  122 , region  6927 6954 length 28
+reliable rate:  1.0
+merge count 1 haps number 3
+enumerate prefix
+firstH len 28
+enumerate suffix
+lastH len 28
+block region 6927 6954 has 1 haplotype segements
+phasing block:  123 , region  6955 6966 length 12
+reliable rate:  0.916666666667
+enumerate prefix
+firstH len 11
+enumerate suffix
+lastH len 11
+block region 6955 6966 has 1 haplotype segements
+phasing block:  124 , region  6967 6989 length 23
+reliable rate:  0.95652173913
+enumerate prefix
+firstH len 22
+enumerate suffix
+lastH len 23
+block region 6967 6989 has 1 haplotype segements
+phasing block:  125 , region  6990 6998 length 9
+reliable rate:  0.888888888889
+enumerate prefix
+firstH len 8
+enumerate suffix
+lastH len 8
+block region 6990 6998 has 1 haplotype segements
+phasing block:  126 , region  6999 7001 length 3
+[0, 0, 0]
+phasing block:  127 , region  7002 7009 length 8
+reliable rate:  1.0
+merge count 1 haps number 2
+minimal MEC more than 1 region 7002
+[1, 1, 1, 1, 0, 1, 1, 1]
+[1, 1, 1, 1, 1, 0, 0, 0]
+(7002, [1, 1, 1, 1])
+(7006, [0, 1, 1, 1])
+merge count 2 haps number 2
+minimal MEC more than 1 region 7002
+[1, 1, 1, 1, 0, 1, 1, 1]
+[1, 1, 1, 1, 1, 0, 0, 0]
+(7002, [1, 1, 1, 1])
+(7006, [0, 1, 1, 1])
+enumerate prefix
+firstH len 4
+enumerate suffix
+lastH len 4
+block region 7002 7009 has 2 haplotype segements
+phasing block:  128 , region  7010 7027 length 18
+reliable rate:  1.0
+merge count 1 haps number 3
+enumerate prefix
+firstH len 18
+enumerate suffix
+lastH len 18
+block region 7010 7027 has 1 haplotype segements
+phasing block:  129 , region  7028 7035 length 8
+reliable rate:  0.875
+enumerate prefix
+firstH len 7
+enumerate suffix
+lastH len 7
+block region 7028 7035 has 1 haplotype segements
+phasing block:  130 , region  7043 7046 length 4
+[0, 0, 0, 1]
+phasing block:  131 , region  7047 7050 length 4
+[0, 1, 1, 0]
+phasing block:  132 , region  7051 7087 length 37
+reliable rate:  1.0
+merge count 1 haps number 5
+enumerate prefix
+firstH len 37
+enumerate suffix
+lastH len 37
+block region 7051 7087 has 1 haplotype segements
+phasing block:  133 , region  7088 7101 length 14
+reliable rate:  1.0
+enumerate prefix
+firstH len 14
+enumerate suffix
+lastH len 14
+block region 7088 7101 has 1 haplotype segements
+phasing block:  134 , region  7102 7105 length 4
+[0, 0, 0, 0]
+phasing block:  135 , region  7106 7199 length 94
+reliable rate:  1.0
+merge count 1 haps number 5
+enumerate prefix
+firstH len 94
+enumerate suffix
+lastH len 94
+block region 7106 7199 has 1 haplotype segements
+phasing block:  136 , region  7200 7572 length 373
+reliable rate:  0.98927613941
+merge count 1 haps number 18
+enumerate prefix
+firstH len 371
+enumerate suffix
+lastH len 371
+block region 7200 7572 has 1 haplotype segements
+phasing block:  137 , region  7574 7770 length 197
+reliable rate:  0.994923857868
+merge count 1 haps number 4
+enumerate prefix
+firstH len 197
+enumerate suffix
+lastH len 197
+block region 7574 7770 has 1 haplotype segements
+phasing block:  138 , region  7773 7956 length 184
+reliable rate:  1.0
+merge count 1 haps number 9
+enumerate prefix
+firstH len 184
+enumerate suffix
+lastH len 184
+block region 7773 7956 has 1 haplotype segements
+phasing block:  139 , region  7957 7963 length 7
+[0, 0, 0, 0, 0, 0, 1]
+phasing block:  140 , region  7964 7999 length 36
+reliable rate:  1.0
+merge count 1 haps number 5
+enumerate prefix
+firstH len 36
+enumerate suffix
+lastH len 36
+block region 7964 7999 has 1 haplotype segements
+phasing block:  141 , region  8000 8001 length 2
+[0, 0]
+phasing block:  142 , region  8003 8169 length 167
+reliable rate:  0.982035928144
+merge count 1 haps number 16
+minimal MEC more than 1 region 8004
+[0, 0, 0, 1, 1, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 0, 1, 0, 0]
+[0, 0, 0, 1, 1, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1]
+(8004, [0, 0, 0, 1, 1, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 0, 1])
+(8159, [0, 0])
+merge count 2 haps number 2
+minimal MEC more than 1 region 8004
+[0, 0, 0, 1, 1, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[0, 0, 0, 1, 1, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+(8004, [0, 0, 0, 1, 1, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 0, 1])
+(8159, [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0])
+enumerate prefix
+firstH len 155
+enumerate suffix
+lastH len 11
+block region 8003 8169 has 2 haplotype segements
+phasing block:  143 , region  8170 8211 length 42
+reliable rate:  0.928571428571
+merge count 1 haps number 4
+minimal MEC more than 1 region 8170
+[1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 1, 0, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 0]
+[1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1]
+(8170, [1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 1, 0, 1])
+(8183, [0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 0])
+merge count 2 haps number 2
+minimal MEC more than 1 region 8170
+[1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 1, 0, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0]
+[1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1]
+(8170, [1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 1, 0, 1])
+(8183, [0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0])
+enumerate prefix
+firstH len 13
+enumerate suffix
+lastH len 28
+block region 8170 8211 has 2 haplotype segements
+phasing block:  144 , region  8212 8474 length 263
+reliable rate:  0.988593155894
+merge count 1 haps number 10
+enumerate prefix
+firstH len 261
+enumerate suffix
+lastH len 262
+block region 8212 8474 has 1 haplotype segements
+phasing block:  145 , region  8475 8484 length 10
+reliable rate:  1.0
+enumerate prefix
+firstH len 10
+enumerate suffix
+lastH len 10
+block region 8475 8484 has 1 haplotype segements
+phasing block:  146 , region  8485 8489 length 5
+in enumerate reads, reads Number 4
+[0, 0, 0, 0, 0] 1
+[0, 0, -1, 0, -1] 3
+[1, 0, 0, 0, -1] 2
+[0, 0, -1, 0, 1] 3
+[0, -1, -1, 0, 0] 4
+[0, -1, 1, 1, -1] 3
+[1, -1, -1, 0, -1] 5
+[0, -1, 1, 1, 1] 3
+phasing block:  147 , region  8490 8491 length 2
+in enumerate reads, reads Number 1
+[1, 1] 0
+phasing block:  148 , region  8492 8494 length 3
+[0, 0, 0]
+phasing block:  149 , region  8495 8496 length 2
+in enumerate reads, reads Number 1
+[1, 0] 0
+phasing block:  150 , region  8497 8500 length 4
+[0, 0, 0, 0]
+phasing block:  151 , region  8504 8969 length 466
+reliable rate:  0.997854077253
+merge count 1 haps number 12
+enumerate prefix
+firstH len 466
+enumerate suffix
+lastH len 466
+block region 8504 8969 has 1 haplotype segements
+phasing block:  152 , region  8970 9019 length 50
+reliable rate:  0.92
+merge count 1 haps number 3
+enumerate prefix
+firstH len 50
+enumerate suffix
+lastH len 50
+block region 8970 9019 has 1 haplotype segements
+phasing block:  153 , region  9020 9021 length 2
+[0, 1]
+phasing block:  154 , region  9024 9065 length 42
+reliable rate:  1.0
+merge count 1 haps number 4
+enumerate prefix
+firstH len 42
+enumerate suffix
+lastH len 42
+block region 9024 9065 has 1 haplotype segements
+phasing block:  155 , region  9066 9609 length 544
+reliable rate:  0.992647058824
+merge count 1 haps number 14
+enumerate prefix
+firstH len 543
+enumerate suffix
+lastH len 543
+block region 9066 9609 has 1 haplotype segements
+phasing block:  156 , region  9613 9619 length 7
+[0, 1, 1, 1, 1, 1, 1]
+phasing block:  157 , region  9620 9622 length 3
+[0, 1, 1]
+phasing block:  158 , region  9623 9673 length 51
+reliable rate:  0.960784313725
+merge count 1 haps number 2
+enumerate prefix
+firstH len 49
+enumerate suffix
+lastH len 51
+block region 9623 9673 has 1 haplotype segements
+phasing block:  159 , region  9674 9675 length 2
+[0, 0]
+phasing block:  160 , region  9676 9685 length 10
+reliable rate:  0.9
+enumerate prefix
+firstH len 9
+enumerate suffix
+lastH len 10
+block region 9676 9685 has 1 haplotype segements
+phasing block:  161 , region  9686 9748 length 63
+reliable rate:  0.984126984127
+merge count 1 haps number 3
+enumerate prefix
+firstH len 63
+enumerate suffix
+lastH len 63
+block region 9686 9748 has 1 haplotype segements
+phasing block:  162 , region  9749 9771 length 23
+reliable rate:  1.0
+merge count 1 haps number 2
+enumerate prefix
+firstH len 23
+enumerate suffix
+lastH len 23
+block region 9749 9771 has 1 haplotype segements
+phasing block:  163 , region  9772 9782 length 11
+reliable rate:  0.909090909091
+merge count 1 haps number 2
+enumerate prefix
+firstH len 10
+enumerate suffix
+lastH len 11
+block region 9772 9782 has 1 haplotype segements
+phasing block:  164 , region  9783 10010 length 228
+reliable rate:  1.0
+merge count 1 haps number 3
+enumerate prefix
+firstH len 228
+enumerate suffix
+lastH len 228
+block region 9783 10010 has 1 haplotype segements
+phasing block:  165 , region  10011 10226 length 216
+reliable rate:  0.981481481481
+merge count 1 haps number 5
+enumerate prefix
+firstH len 213
+enumerate suffix
+lastH len 215
+block region 10011 10226 has 1 haplotype segements
+phasing block:  166 , region  10227 10231 length 5
+[0, 0, 1, 1, 0]
+phasing block:  167 , region  10232 10713 length 482
+reliable rate:  0.99377593361
+merge count 1 haps number 10
+enumerate prefix
+firstH len 482
+enumerate suffix
+lastH len 482
+block region 10232 10713 has 1 haplotype segements
+phasing block:  168 , region  10714 10881 length 168
+reliable rate:  1.0
+enumerate prefix
+firstH len 168
+enumerate suffix
+lastH len 168
+block region 10714 10881 has 1 haplotype segements
+phasing block:  169 , region  10882 10978 length 97
+reliable rate:  0.989690721649
+merge count 1 haps number 3
+enumerate prefix
+firstH len 97
+enumerate suffix
+lastH len 97
+block region 10882 10978 has 1 haplotype segements
+phasing block:  170 , region  10979 11523 length 545
+reliable rate:  0.998165137615
+merge count 1 haps number 11
+enumerate prefix
+firstH len 545
+enumerate suffix
+lastH len 545
+block region 10979 11523 has 1 haplotype segements
+phasing block:  171 , region  11524 11544 length 21
+reliable rate:  0.952380952381
+merge count 1 haps number 2
+enumerate prefix
+firstH len 20
+enumerate suffix
+lastH len 20
+block region 11524 11544 has 1 haplotype segements
+phasing block:  172 , region  11546 11586 length 41
+reliable rate:  1.0
+enumerate prefix
+firstH len 41
+enumerate suffix
+lastH len 41
+block region 11546 11586 has 1 haplotype segements
+phasing block:  173 , region  11587 11669 length 83
+reliable rate:  0.927710843373
+merge count 1 haps number 2
+enumerate prefix
+firstH len 77
+enumerate suffix
+lastH len 77
+minimal MEC more than 1 region 11587
+[0, 1, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[0, 1, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0]
+[0, 1, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0]
+[0, 1, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0]
+[0, 1, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0]
+[0, 1, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0]
+[0, 1, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0]
+[0, 1, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0]
+(11587, [0, 1, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, -1, -1, 0])
+block region 11587 11669 has 1 haplotype segements
+phasing block:  174 , region  11671 11739 length 69
+reliable rate:  1.0
+merge count 1 haps number 2
+enumerate prefix
+firstH len 69
+enumerate suffix
+lastH len 69
+block region 11671 11739 has 1 haplotype segements
+phasing block:  175 , region  11742 11745 length 4
+[0, 0, 1, 0]
+phasing block:  176 , region  11746 11747 length 2
+[0, 0]
+phasing block:  177 , region  11750 11751 length 2
+[0, 0]
+phasing block:  178 , region  11756 11757 length 2
+[0, 1]
+phasing block:  179 , region  11758 11846 length 89
+reliable rate:  1.0
+merge count 1 haps number 2
+enumerate prefix
+firstH len 89
+enumerate suffix
+lastH len 89
+block region 11758 11846 has 1 haplotype segements
+phasing block:  180 , region  11847 11926 length 80
+reliable rate:  1.0
+merge count 1 haps number 4
+enumerate prefix
+firstH len 80
+enumerate suffix
+lastH len 80
+block region 11847 11926 has 1 haplotype segements
+phasing block:  181 , region  11927 11972 length 46
+reliable rate:  1.0
+enumerate prefix
+firstH len 46
+enumerate suffix
+lastH len 46
+block region 11927 11972 has 1 haplotype segements
+phasing block:  182 , region  11973 12157 length 185
+reliable rate:  0.994594594595
+merge count 1 haps number 6
+enumerate prefix
+firstH len 185
+enumerate suffix
+lastH len 185
+block region 11973 12157 has 1 haplotype segements
+phasing block:  183 , region  12158 12240 length 83
+reliable rate:  1.0
+merge count 1 haps number 3
+enumerate prefix
+firstH len 83
+enumerate suffix
+lastH len 83
+block region 12158 12240 has 1 haplotype segements
+phasing block:  184 , region  12241 12255 length 15
+reliable rate:  1.0
+enumerate prefix
+firstH len 15
+enumerate suffix
+lastH len 15
+block region 12241 12255 has 1 haplotype segements
+phasing block:  185 , region  12257 12259 length 3
+[0, 1, 0]
+phasing block:  186 , region  12260 12262 length 3
+[0, 0, 0]
+phasing block:  187 , region  12263 12353 length 91
+reliable rate:  0.967032967033
+merge count 1 haps number 6
+enumerate prefix
+firstH len 91
+enumerate suffix
+lastH len 91
+block region 12263 12353 has 1 haplotype segements
+phasing block:  188 , region  12354 12359 length 6
+[0, 0, 1, 1, 1, 0]
+phasing block:  189 , region  12360 12375 length 16
+reliable rate:  1.0
+merge count 1 haps number 3
+enumerate prefix
+firstH len 16
+enumerate suffix
+lastH len 16
+block region 12360 12375 has 1 haplotype segements
+phasing block:  190 , region  12376 12477 length 102
+reliable rate:  1.0
+merge count 1 haps number 2
+enumerate prefix
+firstH len 102
+enumerate suffix
+lastH len 102
+block region 12376 12477 has 1 haplotype segements
+phasing block:  191 , region  12479 12584 length 106
+reliable rate:  0.962264150943
+merge count 1 haps number 3
+enumerate prefix
+firstH len 104
+enumerate suffix
+lastH len 106
+block region 12479 12584 has 1 haplotype segements
+phasing block:  192 , region  12585 12841 length 257
+reliable rate:  0.992217898833
+merge count 1 haps number 6
+enumerate prefix
+firstH len 257
+enumerate suffix
+lastH len 257
+block region 12585 12841 has 1 haplotype segements
+phasing block:  193 , region  12842 12845 length 4
+[0, 0, 0, 0]
+phasing block:  194 , region  12846 12847 length 2
+[0, 1]
+phasing block:  195 , region  12848 12919 length 72
+reliable rate:  1.0
+enumerate prefix
+firstH len 72
+enumerate suffix
+lastH len 72
+block region 12848 12919 has 1 haplotype segements
+phasing block:  196 , region  12921 12930 length 10
+reliable rate:  1.0
+merge count 1 haps number 2
+enumerate prefix
+firstH len 10
+enumerate suffix
+lastH len 10
+block region 12921 12930 has 1 haplotype segements
+phasing block:  197 , region  12932 13000 length 69
+reliable rate:  0.985507246377
+merge count 1 haps number 3
+enumerate prefix
+firstH len 69
+enumerate suffix
+lastH len 69
+block region 12932 13000 has 1 haplotype segements
+phasing block:  198 , region  13001 13123 length 123
+reliable rate:  0.983739837398
+merge count 1 haps number 7
+minimal MEC more than 1 region 13001
+[0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 1, 1, 1, 0, 1, 1, 0, 1, 0, 0, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0]
+[0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 0, 1, 1, 0, 1, 0, 0, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0]
+(13001, [0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, -1, 0, 1, 0, 0, 1, 1, 1, 1, 0, 1, 1, 0, 1, 0, 0, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0])
+enumerate prefix
+firstH len 123
+enumerate suffix
+lastH len 123
+block region 13001 13123 has 1 haplotype segements
+phasing block:  199 , region  13124 13146 length 23
+reliable rate:  1.0
+merge count 1 haps number 4
+enumerate prefix
+firstH len 23
+enumerate suffix
+lastH len 23
+block region 13124 13146 has 1 haplotype segements
+phasing block:  200 , region  13147 13180 length 34
+reliable rate:  1.0
+merge count 1 haps number 3
+enumerate prefix
+firstH len 34
+enumerate suffix
+lastH len 34
+block region 13147 13180 has 1 haplotype segements
+phasing block:  201 , region  13181 13190 length 10
+reliable rate:  1.0
+merge count 1 haps number 2
+enumerate prefix
+firstH len 10
+enumerate suffix
+lastH len 10
+block region 13181 13190 has 1 haplotype segements
+phasing block:  202 , region  13193 13194 length 2
+[0, 1]
+phasing block:  203 , region  13196 13341 length 146
+reliable rate:  0.993150684932
+merge count 1 haps number 2
+enumerate prefix
+firstH len 145
+enumerate suffix
+lastH len 145
+block region 13196 13341 has 1 haplotype segements
+phasing block:  204 , region  13343 13347 length 5
+[0, 1, 0, 0, 0]
+phasing block:  205 , region  13348 13363 length 16
+reliable rate:  1.0
+enumerate prefix
+firstH len 16
+enumerate suffix
+lastH len 16
+block region 13348 13363 has 1 haplotype segements
+phasing block:  206 , region  13364 13367 length 4
+[0, 1, 1, 1]
+phasing block:  207 , region  13368 13417 length 50
+reliable rate:  0.96
+merge count 1 haps number 5
+enumerate prefix
+firstH len 50
+enumerate suffix
+lastH len 50
+block region 13368 13417 has 1 haplotype segements
+phasing block:  208 , region  13421 13424 length 4
+[0, 0, 0, 0]
+phasing block:  209 , region  13425 13426 length 2
+[0, 1]
+phasing block:  210 , region  13427 13428 length 2
+[0, 1]
+phasing block:  211 , region  13429 13436 length 8
+reliable rate:  0.875
+merge count 1 haps number 2
+enumerate prefix
+firstH len 8
+enumerate suffix
+lastH len 8
+block region 13429 13436 has 1 haplotype segements
+phasing block:  212 , region  13437 13472 length 36
+reliable rate:  0.916666666667
+merge count 1 haps number 2
+minimal MEC more than 1 region 13438
+[0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+(13438, [0, 0, 0, 0])
+(13442, [1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0])
+merge count 2 haps number 2
+minimal MEC more than 1 region 13438
+[0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+(13438, [0, 0, 0, 0])
+(13442, [1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0])
+enumerate prefix
+firstH len 4
+enumerate suffix
+lastH len 31
+block region 13437 13472 has 2 haplotype segements
+phasing block:  213 , region  13473 13492 length 20
+reliable rate:  0.95
+merge count 1 haps number 3
+enumerate prefix
+firstH len 20
+enumerate suffix
+lastH len 20
+block region 13473 13492 has 1 haplotype segements
+phasing block:  214 , region  13493 13494 length 2
+in enumerate reads, reads Number 1
+[1, 1] 0
+phasing block:  215 , region  13496 13560 length 65
+reliable rate:  0.969230769231
+merge count 1 haps number 6
+minimal MEC more than 1 region 13496
+[0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1]
+[0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0]
+(13496, [0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1])
+(13507, [0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1])
+merge count 2 haps number 2
+minimal MEC more than 1 region 13496
+[0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+(13496, [0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1])
+(13507, [0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0])
+enumerate prefix
+firstH len 11
+enumerate suffix
+lastH len 53
+block region 13496 13560 has 2 haplotype segements
+phasing block:  216 , region  13561 13593 length 33
+reliable rate:  0.939393939394
+merge count 1 haps number 2
+enumerate prefix
+firstH len 32
+enumerate suffix
+lastH len 33
+block region 13561 13593 has 1 haplotype segements
+phasing block:  217 , region  13594 13654 length 61
+reliable rate:  0.967213114754
+merge count 1 haps number 3
+enumerate prefix
+firstH len 60
+enumerate suffix
+lastH len 61
+block region 13594 13654 has 1 haplotype segements
+phasing block:  218 , region  13655 13752 length 98
+reliable rate:  1.0
+merge count 1 haps number 6
+enumerate prefix
+firstH len 98
+enumerate suffix
+lastH len 98
+block region 13655 13752 has 1 haplotype segements
+phasing block:  219 , region  13753 13772 length 20
+reliable rate:  1.0
+merge count 1 haps number 2
+enumerate prefix
+firstH len 20
+enumerate suffix
+lastH len 20
+block region 13753 13772 has 1 haplotype segements
+phasing block:  220 , region  13773 13901 length 129
+reliable rate:  1.0
+merge count 1 haps number 3
+enumerate prefix
+firstH len 129
+enumerate suffix
+lastH len 129
+block region 13773 13901 has 1 haplotype segements
+phasing block:  221 , region  13902 13958 length 57
+reliable rate:  1.0
+enumerate prefix
+firstH len 57
+enumerate suffix
+lastH len 57
+block region 13902 13958 has 1 haplotype segements
+phasing block:  222 , region  13962 13963 length 2
+[0, 0]
+phasing block:  223 , region  13964 14033 length 70
+reliable rate:  0.985714285714
+merge count 1 haps number 2
+enumerate prefix
+firstH len 70
+enumerate suffix
+lastH len 70
+block region 13964 14033 has 1 haplotype segements
+phasing block:  224 , region  14034 14064 length 31
+reliable rate:  1.0
+enumerate prefix
+firstH len 31
+enumerate suffix
+lastH len 31
+block region 14034 14064 has 1 haplotype segements
+phasing block:  225 , region  14065 14068 length 4
+[0, 1, 1, 1]
+phasing block:  226 , region  14069 14072 length 4
+[0, 0, 1, 0]
+phasing block:  227 , region  14073 14074 length 2
+in enumerate reads, reads Number 1
+[1, 0] 0
+phasing block:  228 , region  14080 14171 length 92
+reliable rate:  0.989130434783
+merge count 1 haps number 6
+enumerate prefix
+firstH len 92
+enumerate suffix
+lastH len 92
+block region 14080 14171 has 1 haplotype segements
+phasing block:  229 , region  14172 14176 length 5
+[0, 1, 1, 1, 1]
+phasing block:  230 , region  14177 14179 length 3
+[0, 0, 0]
+phasing block:  231 , region  14180 14201 length 22
+reliable rate:  1.0
+enumerate prefix
+firstH len 22
+enumerate suffix
+lastH len 22
+block region 14180 14201 has 1 haplotype segements
+phasing block:  232 , region  14208 14209 length 2
+[0, 0]
+phasing block:  233 , region  14211 14212 length 2
+[0, 0]
+phasing block:  234 , region  14213 14238 length 26
+reliable rate:  1.0
+enumerate prefix
+firstH len 26
+enumerate suffix
+lastH len 26
+block region 14213 14238 has 1 haplotype segements
+phasing block:  235 , region  14239 14508 length 270
+reliable rate:  0.988888888889
+merge count 1 haps number 11
+minimal MEC more than 1 region 14239
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+(14239, [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0])
+enumerate prefix
+firstH len 270
+enumerate suffix
+lastH len 270
+block region 14239 14508 has 1 haplotype segements
+phasing block:  236 , region  14509 14553 length 45
+reliable rate:  0.955555555556
+merge count 1 haps number 4
+enumerate prefix
+firstH len 45
+enumerate suffix
+lastH len 45
+block region 14509 14553 has 1 haplotype segements
+phasing block:  237 , region  14554 14559 length 6
+[0, 0, 1, 1, 1, 0]
+phasing block:  238 , region  14564 14590 length 27
+reliable rate:  0.962962962963
+enumerate prefix
+firstH len 26
+enumerate suffix
+lastH len 27
+block region 14564 14590 has 1 haplotype segements
+phasing block:  239 , region  14591 14655 length 65
+reliable rate:  1.0
+merge count 1 haps number 3
+minimal MEC more than 1 region 14591
+[0, 0, 0, 0, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[0, 0, 0, 0, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+(14591, [0, 0, 0, 0, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1])
+(14608, [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0])
+merge count 2 haps number 2
+minimal MEC more than 1 region 14591
+[0, 0, 0, 0, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[0, 0, 0, 0, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+(14591, [0, 0, 0, 0, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1])
+(14608, [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0])
+enumerate prefix
+firstH len 17
+enumerate suffix
+lastH len 48
+block region 14591 14655 has 2 haplotype segements
+phasing block:  240 , region  14656 14748 length 93
+reliable rate:  1.0
+merge count 1 haps number 4
+enumerate prefix
+firstH len 93
+enumerate suffix
+lastH len 93
+block region 14656 14748 has 1 haplotype segements
+phasing block:  241 , region  14749 14884 length 136
+reliable rate:  1.0
+merge count 1 haps number 7
+enumerate prefix
+firstH len 136
+enumerate suffix
+lastH len 136
+block region 14749 14884 has 1 haplotype segements
+phasing block:  242 , region  14885 14962 length 78
+reliable rate:  1.0
+merge count 1 haps number 3
+enumerate prefix
+firstH len 78
+enumerate suffix
+lastH len 78
+block region 14885 14962 has 1 haplotype segements
+phasing block:  243 , region  14963 14968 length 6
+[0, 0, 0, 1, 0, 0]
+phasing block:  244 , region  14969 15066 length 98
+reliable rate:  1.0
+merge count 1 haps number 5
+enumerate prefix
+firstH len 98
+enumerate suffix
+lastH len 98
+block region 14969 15066 has 1 haplotype segements
+phasing block:  245 , region  15067 15133 length 67
+reliable rate:  0.985074626866
+merge count 1 haps number 3
+minimal MEC more than 1 region 15067
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0]
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 1, 0, 1]
+(15067, [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1])
+(15131, [0, 1, 0])
+merge count 2 haps number 2
+minimal MEC more than 1 region 15067
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0]
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 1, 0, 1]
+(15067, [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1])
+(15131, [0, 1, 0])
+enumerate prefix
+firstH len 64
+enumerate suffix
+lastH len 3
+block region 15067 15133 has 2 haplotype segements
+phasing block:  246 , region  15134 15223 length 90
+reliable rate:  0.977777777778
+merge count 1 haps number 5
+enumerate prefix
+firstH len 90
+enumerate suffix
+lastH len 90
+block region 15134 15223 has 1 haplotype segements
+phasing block:  247 , region  15224 15385 length 162
+reliable rate:  0.987654320988
+merge count 1 haps number 8
+enumerate prefix
+firstH len 162
+enumerate suffix
+lastH len 162
+block region 15224 15385 has 1 haplotype segements
+phasing block:  248 , region  15386 15396 length 11
+reliable rate:  0.909090909091
+merge count 1 haps number 3
+enumerate prefix
+firstH len 11
+enumerate suffix
+lastH len 11
+block region 15386 15396 has 1 haplotype segements
+phasing block:  249 , region  15397 15436 length 40
+reliable rate:  0.975
+merge count 1 haps number 2
+enumerate prefix
+firstH len 40
+enumerate suffix
+lastH len 40
+block region 15397 15436 has 1 haplotype segements
+phasing block:  250 , region  15437 15485 length 49
+reliable rate:  0.979591836735
+merge count 1 haps number 4
+enumerate prefix
+firstH len 49
+enumerate suffix
+lastH len 49
+block region 15437 15485 has 1 haplotype segements
+phasing block:  251 , region  15486 15547 length 62
+reliable rate:  0.983870967742
+merge count 1 haps number 4
+enumerate prefix
+firstH len 62
+enumerate suffix
+lastH len 62
+block region 15486 15547 has 1 haplotype segements
+phasing block:  252 , region  15548 15550 length 3
+[0, 1, 1]
+phasing block:  253 , region  15551 16087 length 537
+reliable rate:  0.996275605214
+merge count 1 haps number 15
+enumerate prefix
+firstH len 537
+enumerate suffix
+lastH len 537
+block region 15551 16087 has 1 haplotype segements
+phasing block:  254 , region  16088 16275 length 188
+reliable rate:  0.989361702128
+merge count 1 haps number 7
+enumerate prefix
+firstH len 188
+enumerate suffix
+lastH len 188
+block region 16088 16275 has 1 haplotype segements
+phasing block:  255 , region  16276 16306 length 31
+reliable rate:  0.967741935484
+merge count 1 haps number 2
+enumerate prefix
+firstH len 31
+enumerate suffix
+lastH len 31
+block region 16276 16306 has 1 haplotype segements
+phasing block:  256 , region  16307 16406 length 100
+reliable rate:  0.96
+merge count 1 haps number 5
+enumerate prefix
+firstH len 99
+enumerate suffix
+lastH len 99
+block region 16307 16406 has 1 haplotype segements
+phasing block:  257 , region  16407 16431 length 25
+reliable rate:  0.88
+enumerate prefix
+firstH len 22
+minimal MEC more than 1 region 16407
+[0, 0, 1, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 0, 0, 0, 0, 1]
+[1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 0, 0, 0, 0, 1]
+[1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 0, 0, 0, 0, 1]
+(16407, [0, 0])
+(16410, [0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 0, 0, 0, 0, 1])
+enumerate suffix
+lastH len 22
+block region 16407 16431 has 2 haplotype segements
+phasing block:  258 , region  16432 16912 length 481
+reliable rate:  0.995841995842
+merge count 1 haps number 20
+enumerate prefix
+firstH len 481
+enumerate suffix
+lastH len 481
+block region 16432 16912 has 1 haplotype segements
+phasing block:  259 , region  16913 16922 length 10
+reliable rate:  0.7
+enumerate prefix
+firstH len 7
+enumerate suffix
+lastH len 8
+block region 16913 16922 has 1 haplotype segements
+phasing block:  260 , region  16923 16961 length 39
+reliable rate:  1.0
+enumerate prefix
+firstH len 39
+enumerate suffix
+lastH len 39
+block region 16923 16961 has 1 haplotype segements
+phasing block:  261 , region  16962 17120 length 159
+reliable rate:  1.0
+merge count 1 haps number 2
+enumerate prefix
+firstH len 159
+enumerate suffix
+lastH len 159
+block region 16962 17120 has 1 haplotype segements
+phasing block:  262 , region  17121 17125 length 5
+[0, 1, 1, 0, 1]
+phasing block:  263 , region  17126 17156 length 31
+reliable rate:  1.0
+merge count 1 haps number 2
+enumerate prefix
+firstH len 31
+enumerate suffix
+lastH len 31
+block region 17126 17156 has 1 haplotype segements
+phasing block:  264 , region  17159 17167 length 9
+reliable rate:  1.0
+enumerate prefix
+firstH len 9
+enumerate suffix
+lastH len 9
+block region 17159 17167 has 1 haplotype segements
+phasing block:  265 , region  17168 17194 length 27
+reliable rate:  1.0
+merge count 1 haps number 2
+enumerate prefix
+firstH len 27
+enumerate suffix
+lastH len 27
+block region 17168 17194 has 1 haplotype segements
+phasing block:  266 , region  17195 17274 length 80
+reliable rate:  1.0
+enumerate prefix
+firstH len 80
+enumerate suffix
+lastH len 80
+block region 17195 17274 has 1 haplotype segements
+phasing block:  267 , region  17275 17440 length 166
+reliable rate:  0.993975903614
+merge count 1 haps number 3
+enumerate prefix
+firstH len 166
+enumerate suffix
+lastH len 166
+block region 17275 17440 has 1 haplotype segements
+phasing block:  268 , region  17441 17517 length 77
+reliable rate:  0.974025974026
+merge count 1 haps number 3
+enumerate prefix
+firstH len 77
+enumerate suffix
+lastH len 77
+block region 17441 17517 has 1 haplotype segements
+phasing block:  269 , region  17518 17621 length 104
+reliable rate:  0.971153846154
+merge count 1 haps number 2
+enumerate prefix
+firstH len 103
+enumerate suffix
+lastH len 103
+block region 17518 17621 has 1 haplotype segements
+phasing block:  270 , region  17622 17688 length 67
+reliable rate:  0.985074626866
+merge count 1 haps number 3
+enumerate prefix
+firstH len 67
+enumerate suffix
+lastH len 67
+block region 17622 17688 has 1 haplotype segements
+phasing block:  271 , region  17689 17822 length 134
+reliable rate:  0.992537313433
+merge count 1 haps number 5
+minimal MEC more than 1 region 17689
+[0, 1, 0, 0, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
+[0, 1, 0, 0, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0]
+(17689, [0, 1, 0, 0, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0])
+(17819, [0, 0, 0, 1])
+merge count 2 haps number 2
+minimal MEC more than 1 region 17689
+[0, 1, 0, 0, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
+[0, 1, 0, 0, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0]
+(17689, [0, 1, 0, 0, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0])
+(17819, [0, 0, 0, 1])
+enumerate prefix
+firstH len 130
+enumerate suffix
+lastH len 4
+block region 17689 17822 has 2 haplotype segements
+phasing block:  272 , region  17824 17825 length 2
+minimal MEC more than 1 region 17824
+[0, 0]
+[0, 1]
+[0, 0]
+[0, 1]
+minimal MEC more than 1 region 17824
+[0, 0]
+[0, 1]
+[0, 0]
+[0, 1]
+reliable rate:  0.0
+block region 17824 17825 has 0 haplotype segements
+phasing block:  273 , region  17826 17837 length 12
+reliable rate:  0.916666666667
+enumerate prefix
+firstH len 11
+enumerate suffix
+lastH len 12
+block region 17826 17837 has 1 haplotype segements
+phasing block:  274 , region  17838 17847 length 10
+reliable rate:  1.0
+enumerate prefix
+firstH len 10
+enumerate suffix
+lastH len 10
+block region 17838 17847 has 1 haplotype segements
+phasing block:  275 , region  17848 17850 length 3
+[0, 0, 0]
+phasing block:  276 , region  17854 17855 length 2
+[0, 1]
+phasing block:  277 , region  17856 17917 length 62
+reliable rate:  0.951612903226
+merge count 1 haps number 2
+enumerate prefix
+firstH len 59
+enumerate suffix
+lastH len 60
+block region 17856 17917 has 1 haplotype segements
+phasing block:  278 , region  17918 17920 length 3
+[0, 1, 1]
+phasing block:  279 , region  17924 17926 length 3
+in enumerate reads, reads Number 2
+[1, -1, 0] 1
+[1, 1, 1] 0
+phasing block:  280 , region  17927 17933 length 7
+[0, 0, 0, 0, 0, 0, 0]
+phasing block:  281 , region  17934 17980 length 47
+reliable rate:  0.978723404255
+enumerate prefix
+firstH len 46
+enumerate suffix
+lastH len 46
+block region 17934 17980 has 1 haplotype segements
+phasing block:  282 , region  17981 17987 length 7
+[0, 0, 0, 1, 0, 1, 0]
+phasing block:  283 , region  17989 17990 length 2
+[0, 0]
+phasing block:  284 , region  17992 17993 length 2
+[0, 1]
+phasing block:  285 , region  17994 17996 length 3
+[0, 1, 1]
+phasing block:  286 , region  17997 17999 length 3
+[0, 1, 1]
+phasing block:  287 , region  18000 18002 length 3
+[0, 1, 1]
+phasing block:  288 , region  18005 18157 length 153
+reliable rate:  0.980392156863
+merge count 1 haps number 5
+enumerate prefix
+firstH len 151
+enumerate suffix
+lastH len 152
+block region 18005 18157 has 1 haplotype segements
+phasing block:  289 , region  18158 18177 length 20
+reliable rate:  0.95
+merge count 1 haps number 2
+enumerate prefix
+firstH len 19
+enumerate suffix
+lastH len 20
+block region 18158 18177 has 1 haplotype segements
+phasing block:  290 , region  18178 18181 length 4
+[0, 1, 0, 1]
+phasing block:  291 , region  18182 18205 length 24
+reliable rate:  0.916666666667
+merge count 1 haps number 2
+enumerate prefix
+firstH len 22
+enumerate suffix
+lastH len 24
+block region 18182 18205 has 1 haplotype segements
+phasing block:  292 , region  18209 18287 length 79
+reliable rate:  1.0
+enumerate prefix
+firstH len 79
+enumerate suffix
+lastH len 79
+block region 18209 18287 has 1 haplotype segements
+phasing block:  293 , region  18288 18289 length 2
+[0, 1]
+phasing block:  294 , region  18290 18291 length 2
+in enumerate reads, reads Number 1
+[1, 1] 0
+phasing block:  295 , region  18293 18297 length 5
+[0, 0, 1, 0, 0]
+phasing block:  296 , region  18299 18592 length 294
+reliable rate:  0.993197278912
+merge count 1 haps number 6
+enumerate prefix
+firstH len 294
+enumerate suffix
+lastH len 294
+block region 18299 18592 has 1 haplotype segements
+phasing block:  297 , region  18593 18597 length 5
+[0, 0, 0, 0, 0]
+phasing block:  298 , region  18598 18663 length 66
+reliable rate:  0.969696969697
+merge count 1 haps number 2
+enumerate prefix
+firstH len 65
+minimal MEC more than 1 region 18598
+[0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
+[1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
+(18599, [0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1])
+enumerate suffix
+lastH len 65
+block region 18598 18663 has 1 haplotype segements
+phasing block:  299 , region  18665 18667 length 3
+[0, 1, 0]
+phasing block:  300 , region  18669 19018 length 350
+reliable rate:  1.0
+merge count 1 haps number 5
+enumerate prefix
+firstH len 350
+enumerate suffix
+lastH len 350
+block region 18669 19018 has 1 haplotype segements
+phasing block:  301 , region  19019 19637 length 619
+reliable rate:  0.996768982229
+merge count 1 haps number 18
+enumerate prefix
+firstH len 619
+enumerate suffix
+lastH len 619
+block region 19019 19637 has 1 haplotype segements
+phasing block:  302 , region  19641 19642 length 2
+[0, 1]
+phasing block:  303 , region  19643 19845 length 203
+reliable rate:  1.0
+merge count 1 haps number 5
+enumerate prefix
+firstH len 203
+enumerate suffix
+lastH len 203
+block region 19643 19845 has 1 haplotype segements
+phasing block:  304 , region  19846 19849 length 4
+[0, 0, 0, 0]
+phasing block:  305 , region  19850 20015 length 166
+reliable rate:  0.981927710843
+merge count 1 haps number 11
+minimal MEC more than 1 region 19850
+[0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0]
+[0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0]
+(19850, [0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0])
+enumerate prefix
+firstH len 166
+enumerate suffix
+lastH len 166
+block region 19850 20015 has 1 haplotype segements
+phasing block:  306 , region  20016 20244 length 229
+reliable rate:  0.982532751092
+merge count 1 haps number 3
+enumerate prefix
+firstH len 228
+enumerate suffix
+lastH len 228
+block region 20016 20244 has 1 haplotype segements
+phasing block:  307 , region  20245 20451 length 207
+reliable rate:  0.995169082126
+merge count 1 haps number 7
+enumerate prefix
+firstH len 207
+enumerate suffix
+lastH len 207
+block region 20245 20451 has 1 haplotype segements
+phasing block:  308 , region  20452 20454 length 3
+[0, 1, 0]
+phasing block:  309 , region  20456 20664 length 209
+reliable rate:  0.976076555024
+merge count 1 haps number 5
+enumerate prefix
+firstH len 207
+enumerate suffix
+lastH len 209
+block region 20456 20664 has 1 haplotype segements
+phasing block:  310 , region  20667 21018 length 352
+reliable rate:  0.982954545455
+merge count 1 haps number 6
+enumerate prefix
+firstH len 350
+enumerate suffix
+lastH len 352
+block region 20667 21018 has 1 haplotype segements
+phasing block:  311 , region  21019 21427 length 409
+reliable rate:  0.997555012225
+merge count 1 haps number 8
+enumerate prefix
+firstH len 409
+enumerate suffix
+lastH len 409
+block region 21019 21427 has 1 haplotype segements
+phasing block:  312 , region  21428 21430 length 3
+[0, 1, 1]
+phasing block:  313 , region  21431 21623 length 193
+reliable rate:  0.989637305699
+merge count 1 haps number 6
+enumerate prefix
+firstH len 193
+enumerate suffix
+lastH len 193
+block region 21431 21623 has 1 haplotype segements
+phasing block:  314 , region  21624 21631 length 8
+reliable rate:  1.0
+enumerate prefix
+firstH len 8
+enumerate suffix
+lastH len 8
+block region 21624 21631 has 1 haplotype segements
+phasing block:  315 , region  21632 21669 length 38
+reliable rate:  1.0
+merge count 1 haps number 2
+enumerate prefix
+firstH len 38
+enumerate suffix
+lastH len 38
+block region 21632 21669 has 1 haplotype segements
+phasing block:  316 , region  21670 21722 length 53
+reliable rate:  1.0
+enumerate prefix
+firstH len 53
+enumerate suffix
+lastH len 53
+block region 21670 21722 has 1 haplotype segements
+phasing block:  317 , region  21723 21999 length 277
+reliable rate:  0.974729241877
+merge count 1 haps number 5
+enumerate prefix
+firstH len 276
+enumerate suffix
+lastH len 276
+block region 21723 21999 has 1 haplotype segements
+phasing block:  318 , region  22001 22305 length 305
+reliable rate:  0.993442622951
+merge count 1 haps number 5
+enumerate prefix
+firstH len 305
+enumerate suffix
+lastH len 305
+block region 22001 22305 has 1 haplotype segements
+phasing block:  319 , region  22309 22515 length 207
+reliable rate:  0.951690821256
+merge count 1 haps number 14
+minimal MEC more than 1 region 22309
+[1, 1, 1, 1, 0, 1, 0, 1, 0, 0, 0, 1, 0]
+[1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 1, 0]
+(22309, [1, 1, 1, 1, 0, 1, -1, 1, 0, 0, 0, 1, 0])
+enumerate prefix
+firstH len 207
+enumerate suffix
+lastH len 207
+block region 22309 22515 has 1 haplotype segements
+phasing block:  320 , region  22516 22547 length 32
+reliable rate:  1.0
+enumerate prefix
+firstH len 32
+enumerate suffix
+lastH len 32
+block region 22516 22547 has 1 haplotype segements
+phasing block:  321 , region  22548 22584 length 37
+reliable rate:  0.972972972973
+merge count 1 haps number 4
+enumerate prefix
+firstH len 37
+enumerate suffix
+lastH len 37
+block region 22548 22584 has 1 haplotype segements
+phasing block:  322 , region  22585 22586 length 2
+[0, 0]
+phasing block:  323 , region  22588 22595 length 8
+reliable rate:  0.875
+merge count 1 haps number 2
+enumerate prefix
+firstH len 8
+enumerate suffix
+lastH len 8
+block region 22588 22595 has 1 haplotype segements
+phasing block:  324 , region  22596 22791 length 196
+reliable rate:  0.969387755102
+merge count 1 haps number 13
+enumerate prefix
+firstH len 196
+enumerate suffix
+lastH len 196
+block region 22596 22791 has 1 haplotype segements
+whole chromosome reliable snp rate 0.96138996139
+Phasing blocks...
+Block 0/337
+Block 100/337
+Block 200/337
+Block 300/337

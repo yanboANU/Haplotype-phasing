@@ -1,5 +1,5 @@
 #!/usr/bin/python
-#this coide is downloaded from probhap
+
 """
 Functions for loading and pre-processing clouds for the local HMM.
 
@@ -113,6 +113,8 @@ def clouds_from_refhap(cloud_filename, data_start, data_end):
     contigs_at_index = dict()
     phaseable_positions = set() # for debugging
 
+    #clouds_length = []
+    max_clouds_length = 0
     # initialize the above:
     for j in xrange(data_start,data_end+1):
         clouds_at_index[j] = set()
@@ -150,6 +152,9 @@ def clouds_from_refhap(cloud_filename, data_start, data_end):
         cloud_start = covered_positions[0]
         cloud_end = covered_positions[-1]
         cloud_length = cloud_end - cloud_start + 1
+        #clouds_length.append(cloud_length)
+        if cloud_length > max_clouds_length:
+            max_clouds_length = cloud_length
 
         # skip clouds outisde our interval:
         if cloud_start < data_start or cloud_end > data_end:
@@ -174,6 +179,8 @@ def clouds_from_refhap(cloud_filename, data_start, data_end):
             print all_clouds[cloud.name].name, all_clouds[cloud.name].start
             print "a read more than one alignment"
 
+            
+
         all_clouds.add(cloud)
         # place it into our sets:
         for j in xrange(cloud_start, cloud_end+1):
@@ -184,8 +191,9 @@ def clouds_from_refhap(cloud_filename, data_start, data_end):
     cloud_file.close()
 
     print 'Positions that can be phased:', len(phaseable_positions)
-
-    return all_clouds, clouds_at_index, contigs_at_index
+    print 'max clouds length', max_clouds_length
+    #print 'median clouds length', sorted(clouds_length)[len(clouds_length)/2]
+    return all_clouds, clouds_at_index, contigs_at_index, max_clouds_length
     return all_clouds, clouds_at_index
 
 def print_clouds(f, clouds, data_start, data_end):

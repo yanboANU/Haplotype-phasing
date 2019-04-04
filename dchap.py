@@ -25,7 +25,7 @@ with open(args.reads) as f:
 data_start, data_end = 0, num_positions - 1
 
 # load clouds/reads
-all_clouds, clouds_at_index, contigs_at_index = clouds_from_refhap(args.reads, data_start, data_end)
+all_clouds, clouds_at_index, contigs_at_index, max_clouds_length = clouds_from_refhap(args.reads, data_start, data_end)
 
 all_clouds_list = list(all_clouds)
 
@@ -33,7 +33,7 @@ all_clouds_list = list(all_clouds)
 print_clouds(args.parsed_reads, all_clouds_list, data_start, data_end)
 
 
-dc = DC.DC(args.k, data_start, data_end, all_clouds_list, clouds_at_index, contigs_at_index)
+dc = DC.DC(args.k, data_start, data_end, all_clouds_list, clouds_at_index, contigs_at_index, max_clouds_length)
 
 haps = dc.run_dc(clouds_at_index)
 

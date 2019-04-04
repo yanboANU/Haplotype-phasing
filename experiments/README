@@ -1,0 +1,18 @@
+
+#For nanopore data
+#download reads alignment(This alignment is between GRCh38 and nanopore reads)
+wget http://s3.amazonaws.com/nanopore-human-wgs/NA12878-Albacore2.1.sorted.bam
+
+samtools index -@ 50  -b NA12878-Albacore2.1.sorted.bam
+
+#for each chromosome
+samtools view -b -@ 20 NA12878*.bam chr22 >chr22.bam
+
+python3 filter_bam.py chr22.bam chr22.filter.bam
+
+nohup /home/yulin/liyanbo/Tools/HapCUT2/build/extractHAIRS --ONT 1 --bam chr22.filter.bam --VCF NA12878_hg38_VCFs/chr22.hg38.vcf --out chr22.matrix --ref chr22.fa
+
+#then run dchap.py and dchap-postprocess.py
+
+
+#For PacBio SMRT data set is similar

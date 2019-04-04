@@ -101,7 +101,10 @@ with open(args.blocks) as f:
         else:
             fields = line.split()
             j = int(fields[0])
-            if consensus.get(j, -1) == 0:
+
+            if fields[1] == '-' and fields[2] == '-': # not allow dash to bool (it's unreliable)
+                new_blocks.write('%d\t-\t-\n' % (j))
+            elif consensus.get(j, -1) == 0:
                 new_blocks.write('%d\t1\t0\n' % (j))
             elif consensus.get(j, -1) == 1:
                 new_blocks.write('%d\t0\t1\n' % (j))
