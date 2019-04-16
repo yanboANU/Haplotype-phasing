@@ -12,7 +12,7 @@ This module defines several types of constructs:
 
 from libprism.local.cloud import Cloud
 import libprism.local.cloud as cloud_lib
-
+import tools
 ###############################################################################
 ## LOAD CLOUDS
 
@@ -113,7 +113,7 @@ def clouds_from_refhap(cloud_filename, data_start, data_end):
     contigs_at_index = dict()
     phaseable_positions = set() # for debugging
 
-    #clouds_length = []
+    clouds_length = {}
     max_clouds_length = 0
     # initialize the above:
     for j in xrange(data_start,data_end+1):
@@ -152,7 +152,12 @@ def clouds_from_refhap(cloud_filename, data_start, data_end):
         cloud_start = covered_positions[0]
         cloud_end = covered_positions[-1]
         cloud_length = cloud_end - cloud_start + 1
-        #clouds_length.append(cloud_length)
+        #if cloud_length > 10:
+            #print cloud_length
+        if cloud_length/10 in clouds_length:
+            clouds_length[cloud_length/10] +=1
+        else:
+            clouds_length[cloud_length/10] = 1
         if cloud_length > max_clouds_length:
             max_clouds_length = cloud_length
 
@@ -192,8 +197,12 @@ def clouds_from_refhap(cloud_filename, data_start, data_end):
 
     print 'Positions that can be phased:', len(phaseable_positions)
     print 'max clouds length', max_clouds_length
-    #print 'median clouds length', sorted(clouds_length)[len(clouds_length)/2]
-    return all_clouds, clouds_at_index, contigs_at_index, max_clouds_length
+    #sortedCloudsLength = sorted(clouds_length)
+    print clouds_length
+    print '90% clouds length', tools.Nnumber(clouds_length, 0.9)*10
+    #print 'max clouds length', sortedCloudsLength[-1]
+    return all_clouds, clouds_at_index, contigs_at_index, tools.Nnumber(clouds_length, 0.9)*10 
+    #return all_clouds, clouds_at_index, contigs_at_index, max_clouds_length
     return all_clouds, clouds_at_index
 
 def print_clouds(f, clouds, data_start, data_end):

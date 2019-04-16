@@ -89,7 +89,7 @@ class Haplotype: # struct
                 temp.append(-1)
                 MEC += len(zero_support_set[j])
         self.set_seq(temp) 
-        print self.seq, MEC
+        #print self.seq, MEC
         return MEC              
 
     def calc_MEC(self):

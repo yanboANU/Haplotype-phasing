@@ -144,6 +144,13 @@ class Cloud():
         if index >= self.start and index <= self.end:
             self.coverage[index - start] = n
 
+    def cover_positions(self, s, e):
+        temp = set()
+        for i in range(s, e+1):
+            temp.add(i)
+        return len( temp.intersection(self.positions) )
+
+
     def from_str(self, sequence, coverage):
         """ Builds cloud form a sequence string, like 0011--01-1,
             and a coverage string, like 3$52--*?-4@ """

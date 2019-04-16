@@ -271,7 +271,7 @@ def pair_check_condense(seqs, start, regionStart, regionEnd, logging):
     isolate = set()
     group = {}
 
-    logging.info("regionStart, regionEnd: %s %s" % (regionStart, regionEnd))
+    logging.debug("regionStart, regionEnd: %s %s" % (regionStart, regionEnd))
     if regionStart>start:
         group[regionStart-1] = list()
         isolate.add(regionStart-1) 
@@ -314,7 +314,7 @@ def pair_check_condense(seqs, start, regionStart, regionEnd, logging):
                     isolate.remove(i+j)
                     group[i].extend(group[i+j])
 
-    logging.info("isolate: %s" % ''.join(str(e)+',' for e in list(isolate)))
+    logging.debug("isolate: %s" % ''.join(str(e)+',' for e in list(isolate)))
     segments = []
     if regionStart-1 in isolate:
         pre = sorted(group[regionStart-1])[0] - 1
@@ -328,9 +328,9 @@ def pair_check_condense(seqs, start, regionStart, regionEnd, logging):
         if len(a) == 1:
             continue
         if a[0] <= pre:
-            logging.info("skip more than one positions, original region %s %s"  % (a[0], a[-1]) )
-            logging.info("new region %s %s"  % (pre+1, a[-1]) )
-            logging.info("skip length %s" % (pre+1 - a[0]) )
+            logging.debug("skip more than one positions, original region %s %s"  % (a[0], a[-1]) )
+            logging.debug("new region %s %s"  % (pre+1, a[-1]) )
+            logging.debug("skip length %s" % (pre+1 - a[0]) )
         for j in range(max(a[0], pre+1), a[-1]+1):
             if j in b:
                 temp.append(seqs[0][j-start])
@@ -349,4 +349,16 @@ def pair_check_condense(seqs, start, regionStart, regionEnd, logging):
 
     
 
-    
+def Nnumber(dictA,  rate): 
+    count = 0
+    for key in dictA:
+        count += dictA[key]
+
+    l = sorted(dictA)     
+    curr = 0
+    for i in l:
+        curr += dictA[i]
+        if curr > rate*count:
+            return i+1
+    return l[-1] + 1   
+

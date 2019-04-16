@@ -21,8 +21,10 @@ import haplotype
 
 def print_aligned_region(start, end, clouds_at_index):
 
-    print("aligned detail region: %d %d " % (start, end))
+    print("aligned detail region: %d %d %d " % (start, end, end-start))
     cs = cloud.get_clouds(start, end, clouds_at_index)
+
+    print("support reads: %d " % len(cs))
 
     aligned_detail = []
     for c in cs:
@@ -80,13 +82,14 @@ class DC(object):
         # contigs_at_index, dict, key is snp np, value is cloud ID who span this SNP 0/1/-, ???
         #contigs_at_index = contigs_from_clouds(all_clouds, self.data_start, self.data_end)  # bug, because a read multiple flag 0/16
         #self.hmm = hmm
-        self.enumerate_length_threshold = 10 # trade-off between accuracy and time
-                                            # according to gap size, 
 
-        #self.enumerate_length_threshold = 5 # trade-off between accuracy and time
+        # trade-off between accuracy and time
+        self.enumerate_length_threshold = 16 # for simulate and pacbio
+        #self.enumerate_length_threshold = 14 # for nanopore
 
         # 4 times reads length * snp rate    
-        self.enumerate_SNP_threshold = min(max_clouds_length, 40) # para, depend on different data set
+        #self.enumerate_SNP_threshold = min(max_clouds_length, 40) # para, depend on different data set
+        self.enumerate_SNP_threshold = 32
         self.label_threshold = 1 #2 mean no reduce label, trick one
         self.same_MEC = False #False mean no trick two
         #self.same_MEC = True
@@ -96,6 +99,11 @@ class DC(object):
         #self.contigs_at_index = contigs_at_index  
         self.set_k_mers(clouds_at_index)
         self.blocks = self.generate_blocks(contigs_at_index)
+
+
+        #logging.basicConfig(stream=sys.stderr, level=logging.DEBUG)
+        #logging.basicConfig(stream=sys.stderr, level=logging.INFO)
+        logging.basicConfig(stream=sys.stderr, level=logging.WARNING)
         ''' 
         fout = open("_block2", "w") 
         fout.write( "block number: %d\n" % len(self.blocks) )
@@ -122,19 +130,36 @@ class DC(object):
         if dis <= cloudsNum:
             haps = self.enumerate_seq(start, end, clouds_at_index)
         else:    
-            haps = self.enumerate_reads(start, end, clouds)
+            haps = self.enumerate_reads(start, end, clouds, clouds_at_index)
         return haps
 
-    def enumerate_reads(self, start, end, clouds):
+    def enumerate_reads(self, start, end, clouds, clouds_at_index):
         cloudsNum = len(clouds)
         cloudsList = list(clouds)
-        haps = list()    
-        
-        if cloudsNum >= self.enumerate_length_threshold or cloudsNum == 0: 
+        haps = list()   
+        if cloudsNum == 0:
             return haps
-        
+ 
+        if cloudsNum >= self.enumerate_length_threshold:
+            
+            c_pos_max = 0
+            c_max = cloudsList[0]
+            for c in cloudsList:
+                c_pos = c.cover_positions(start, end)
+                if c_pos > c_pos_max:
+                    c_max = c
+                    c_pos_max = c_pos
+
+            logging.debug("region %d %d long %d, read support number %d" % ( start, end,  end-start, cloudsNum ) ) 
+            h = haplotype.Haplotype( max(c_max.start, start) )
+            temp_seq = c_max.seq
+            h.set_seq( temp_seq [ max(start - c_max.start, 0): min( end+1-c_max.start, len(temp_seq) ) ] )
+            h.assign_clouds(clouds_at_index)
+            haps.append(h)
+            return haps
+       
         allAssign = tools.enumerate_01_list(cloudsNum)
-        print "in enumerate reads, reads Number", cloudsNum
+        logging.debug("in enumerate reads, reads Number %d", cloudsNum)
         minMEC= 10000
         bestHaps = list()
         for i in range(2**(cloudsNum-1)):
@@ -154,18 +179,14 @@ class DC(object):
 
         l = len(bestHaps)
         if l == 1:
-            #print "find minimal MEC susscess"
             return bestHaps
         else:
-            # more than one best partition
             seqs = [] 
             segments = []
-            print "more than one best read partitions, need improve"
+            logging.debug("more than one best read partitions")
             for h in bestHaps:
                 seqs.append(h.seq)
-                print h.seq
-            '''    
-            segments = tools.divide_condense_mutiple_list(seqs, segments, start)
+            segments = tools.pair_check_condense(seqs, start, start, end, logging)
             l = len(segments)
             for i in range(l):
                a = [ -1 if e==-2 else e for e in segments[i][1] ]
@@ -174,7 +195,6 @@ class DC(object):
                h.assign_clouds(clouds_at_index)
                if len(a) - a.count(-1) >= 2:  
                    haps.append(h)
-            '''       
             return haps   
         
              
@@ -182,25 +202,25 @@ class DC(object):
  
         dis = end - start + 1
         haps = list()
-
-        #if dis >= 10:
-            #print "distance is ", dis, "start end ", start, end
         if dis >= self.enumerate_length_threshold: # need improve    
             return haps
         allPosSeq = tools.enumerate_01_list(dis)    
         l = len(allPosSeq)/2
         bestHaps, haps = self.find_minimal_MEC_part_region([], allPosSeq[0:l], [], start, clouds_at_index, start, end)
-        for h in bestHaps:
-            print h.seq
+        #for h in bestHaps:
+            #print h.seq
         return haps
     
     def enumerate_block_prefix(self, start, firstH, clouds_at_index):
         
-        print "enumerate prefix"
-        print "firstH len", firstH.len
+        logging.info( "enumerate prefix" )
         dis = firstH.start - start
         haps = list()
         if dis > self.enumerate_length_threshold or dis <= 0:
+
+            clouds = haplotype.get_clouds_part_region(clouds_at_index, start, firstH.start-1)
+            newHaps = self.enumerate_reads(start, firstH.start-1, clouds, clouds_at_index)
+            haps.extend(newHaps)
             haps.append(firstH)
             return haps
         allPosSeq = tools.enumerate_01_list(dis)
@@ -211,12 +231,14 @@ class DC(object):
         return haps
 
     def enumerate_block_suffix(self, lastH, end, clouds_at_index):
-        print "enumerate suffix"
-        print "lastH len", lastH.len
+        logging.info( "enumerate suffix" )
         dis = end - lastH.end
         haps = list()
         if dis > self.enumerate_length_threshold or dis <= 0:
+            clouds = haplotype.get_clouds_part_region(clouds_at_index, lastH.end +1, end)
+            newHaps = self.enumerate_reads(lastH.end+1, end, clouds, clouds_at_index)
             haps.append(lastH)
+            haps.extend(newHaps)
             return haps
         start = lastH.start
         allPosSeq = tools.enumerate_01_list(dis)   
@@ -245,35 +267,24 @@ class DC(object):
                 bestHaps.append(newH)
         l = len(bestHaps)
         if l == 1:
-            #print "find minimal MEC susscess"
             return bestHaps, bestHaps # clouds updata in updata_clouds_support_and_calculate_MEC
         else:
             haps = list()
-            print "minimal MEC more than 1 region: start, end", start, start + len(bestHaps[0].seq), len(bestHaps)
+            logging.info( "region start %d end %d has %d same minimal MEC", start, start + len(bestHaps[0].seq), len(bestHaps) )
             seqs = [] 
             segments = []
             for h in bestHaps:
-                print h.seq # debug
                 seqs.append(h.seq)
-            #print "running function divide condense"    
-            segments = tools.pair_check_condense(seqs, start, regionStart, regionEnd, logging)
-            for s in segments:
-                print s
-            '''    
-            segments = []
-            segments = tools.divide_condense_mutiple_list(seqs, segments, start)
-            for s in segments:
-                print s
-            sys.exit()
-            '''
+            segments = tools.pair_check_condense(seqs, start, regionStart, regionEnd, logging)  
+            #for s in segments:
+                #print s
+
             l = len(segments)
             for i in range(l):
                a = [ -1 if e==-2 else e for e in segments[i][1] ]
                h = haplotype.Haplotype(segments[i][0])        
                h.set_seq(a) # cloud not updata
                h.assign_clouds(clouds_at_index)
-               #print "condense result"
-               #print h.start, h.seq
                if len(a) - a.count(-1) >= 2:  
                    haps.append(h)
             return bestHaps, haps   
@@ -318,14 +329,19 @@ class DC(object):
                    haps.append(h)
             return bestHaps, haps   
     ''' 
-    def run_dc_in_block(self, start, end, clouds_at_index): 
+    def run_dc_in_block(self, start, end, clouds_at_index, reliableHaps): 
         
         label = 2 # for both PacBio and nanopore
         haps = list()
 
+        #print_aligned_region(58454, 58476, clouds_at_index)   
+        #sys.exit()                  
+    
         # for small block, direct enumerate
         reliableSNP = 0
-        if end - start + 1 < self.enumerate_length_threshold/2:
+        #if end - start + 1 < self.enumerate_length_threshold/2:
+        #if end - start + 1 < self.enumerate_length_threshold: #set this para is 16, cost a lot time
+        if end - start + 1 < 10: # fix this value
             haps = self.enumerate_seq_or_reads(start, end, clouds_at_index)
             if len(haps) == 1:
                 return haps, reliableSNP
@@ -352,25 +368,36 @@ class DC(object):
             haps = self.generate_newhaps_loose_bit_constraint_locally(haps, start, end, label, clouds_at_index)
 
         logging.debug("haplotype from find reliable regions")
+        reliableHaps.extend(haps)
         for h in haps:
             reliableSNP += h.len
             logging.debug( '%s %s'  % (h.start, h.end) )
             #logging.debug( h.seq )
-            
+         
         print "reliable rate: ", float(reliableSNP)/(end-start+1)
+
+        if len(haps) >= 1:
+            if haps[0].start - start > self.enumerate_length_threshold:
+                prefixHaps = self.enumerate_block_prefix(start, haps[0], self.contigs_at_index) 
+                haps.remove(haps[0])
+                haps = prefixHaps + haps
+            if end - haps[-1].end > self.enumerate_length_threshold:    
+                suffixHaps = self.enumerate_block_suffix(haps[-1], end, self.contigs_at_index)
+                haps.remove(haps[-1])
+                haps = haps + suffixHaps
         ################
         #     1 2 3
         #h1.end - h2.start
         #R:   1 - 1
         #consider all reads span over postion2
         #############
-        #enumerate gaps        
+        #enumerate gaps
         if len(haps) > 1: 
             a = len(haps) + 1
             count = 1
             while len(haps) > 1 and ( len(haps) < a or count <= 2 ):
                 a = len(haps)
-                print "merge count", count, "haps number", len(haps)
+                print "merge count", count, "now haps number", len(haps)
                 #enumerate_gap_between_haps/enumerate_gap_among_haps
                 #haps = self.enumerate_gap_among_haps2(haps, clouds_at_index)
                 haps = self.enumerate_gap_among_haps2(haps, self.contigs_at_index)
@@ -381,6 +408,7 @@ class DC(object):
             logging.debug( '%s %s'  % (h.start, h.end) )
             logging.debug( h.seq )
         '''
+
         #enumerate prefix and subfix, trick 3 make sence
         if len(haps) >= 1:
             #prefixHaps = self.enumerate_block_prefix(start, haps[0], clouds_at_index)
@@ -392,7 +420,8 @@ class DC(object):
             haps.remove(haps[-1])
             haps = haps + suffixHaps
 
-        print "block region", start, end, "has", len(haps), "haplotype segements"   
+        print "block region", start, end, "has", len(haps), "haplotype segements"
+        print "*****************************************************************"
         
         '''  
         logging.debug("haplotype from enumerate prefix and suffix")
@@ -456,8 +485,14 @@ class DC(object):
             subLabel = label
             hs = list()
             # +2 because enumerate dis + (number of haps - 1)
-            if (e - s + 2 >= self.enumerate_length_threshold) and subLabel >= 1: # e>s, error rate high, 
-                print "in block big gap dis ", e-s+1, s, e, "reads support number", len(haplotype.get_clouds_part_region(clouds_at_index, s, e) )
+            #if (e - s + 2 >= self.enumerate_length_threshold) and subLabel >= 1: # e>s, error rate high,
+            if (e - s + 2 >= 10) and subLabel >= 1: #fix this value,
+                supportRead = haplotype.get_clouds_part_region(clouds_at_index, s, e)
+                logging.info("in block big gap start %d end %d dis %s read support number %d", s, e, e-s+1, len(supportRead) )
+                #if len(supportRead) <= 5 and e-s+1 > self.enumerate_length_threshold:
+                    #subHaps[i] = self.enumerate_reads(s, e, supportRead)
+                    #continue
+
                 while (len(hs) == 0 and subLabel >= 1):
                     hs = self.generate_haps_from_k_mers(s, e, subLabel, clouds_at_index)
                     subLabel -= 1
@@ -476,26 +511,39 @@ class DC(object):
         return haps
         
 
-    def run_dc(self, clouds_at_index): # 12, Dec
+    def run_dc(self, clouds_at_index, filename): # 12, Dec
         
-        logging.basicConfig(stream=sys.stderr, level=logging.DEBUG)
+        #logging.basicConfig(stream=sys.stderr, level=logging.DEBUG)
         #logging.basicConfig(stream=sys.stderr, level=logging.INFO)
         allHaps = []
         count = 1
         allReliableSNP = 0
+        reliableHaps = []
         print "There are", len(self.blocks), "blocks"
         for block in self.blocks:  # blo/cks break at no reads cover region
             blockLength = block[-1] - block[0] + 1
             print "phasing block: ", count, ", region ", block[0] , block[-1], "length", blockLength
             #time1 = time.clock()
-            haps, reliableSNP = self.run_dc_in_block(block[0], block[-1], clouds_at_index)
-            #time2 = time.clock() 
-            #print "phasing block: ", count, ", time", time2-time1
+            haps, reliableSNP = self.run_dc_in_block(block[0], block[-1], clouds_at_index, reliableHaps)
             allHaps.extend( haps )
             allReliableSNP += reliableSNP
             count += 1
             
-        print "whole chromosome reliable snp rate", float(allReliableSNP)/self.length
+        print "whole chromosome reliable snp rate", float(allReliableSNP)/self.length, allReliableSNP, self.length
+        print "write reliable haplotype", filename + ".reliable" 
+        fout = open( filename + ".reliable", "w")
+        for i, block in enumerate(reliableHaps):
+            fout.write("BLOCK: offset: %d len: %d positions: %d end: %d\n" % (block.start, block.len, block.len-block.seq.count(-1), block.end))
+            
+            for k,y in enumerate(block.seq):
+                j = block.start + k
+                if y != -1: 
+                    fout.write("%d\t%d\t%d\n" % (j, y, tools.int_reverse(y)))
+                else:
+                    fout.write("%d\t%s\t%s\n" % (j, '-', '-'))
+            fout.write("********\n")
+        fout.close()    
+
         return allHaps  
 
      
@@ -527,7 +575,7 @@ class DC(object):
             waitMerge.append(haps[s+1])
             i = 2
             if dis >= 10:
-                print "distance is ", dis, "start end ", haps[s+1].start, haps[s].end
+                logging.debug("distance is %d start %d end %d", dis, haps[s+1].start, haps[s].end)
             
             if dis >= self.enumerate_length_threshold: # need improve 
                 # distance between two continuous reliable regions larger than 10
@@ -535,10 +583,17 @@ class DC(object):
                 #haps = haps[:s+1] + midH + haps[s+1:]
                 #s += len(midH)
                 # add at 25 Feb
-                s += 1
+                logging.info( "enumerate read in big gap" )
+                clouds = haplotype.get_clouds_part_region(clouds_at_index, haps[s].end+1, haps[s+1].start-1)
+                newHaps = self.enumerate_reads(haps[s].end+1, haps[s+1].start-1, clouds, clouds_at_index)
+                if len(newHaps) >= 1:
+                    haps = haps[0:s+1] + newHaps + haps[s+1:]
+                if len(newHaps) == 0:
+                    s += 1
                 continue
             #if snpNum < self.enumerate_SNP_threshold:
             while dis < self.enumerate_length_threshold and snpNum < self.enumerate_SNP_threshold:
+            #while snpNum < self.enumerate_SNP_threshold:  # 8 April, try use enumerate_SNP_threshold to instead both enumerate_SNP_threshold and enumerate_length_threshol
                 if s+i < len(haps):
                     intersectionNum = len( haps[s].clouds.intersection(haps[s+i].clouds) )
                 else:
@@ -547,10 +602,11 @@ class DC(object):
                     break
                 assert haps[s+i].start > haps[s+i-1].end
                 dis = dis + haps[s+i].start - haps[s+i-1].end
-                if haps[s+i].start - haps[s+i-1].end > 10:
-                    print "distance is ", dis, "start end ", haps[s+1].start, haps[s].end
+                #if haps[s+i].start - haps[s+i-1].end > 10:
+                    #print "distance is ", dis, "start end ", haps[s+1].start, haps[s].end
                 snpNum = haps[s+i].end - haps[s].start + 1
                 if dis > self.enumerate_length_threshold or snpNum > self.enumerate_SNP_threshold:
+                #if snpNum > self.enumerate_SNP_threshold: # 8 April, try use enumerate_SNP_threshold to instead both enumerate_SNP_threshold and enumerate_length_threshold
                     dis = dis - (haps[s+i].start - haps[s+i-1].end) # seems no need to updata
                     snpNum = haps[s+i-1].end - haps[s].start + 1 #updata for print
                     break
@@ -592,45 +648,20 @@ class DC(object):
 
     def enumerate_haps(self, hs, clouds_at_index):
        
-        #print "enumerate haps number",len(hs) 
 
         originalLen = len(hs)    
         temp_seq = hs[0].seq  
         ans = list()
-        #if hs[0].len > 10 or hs[-1].len >10:
-        #print "first haps len, second haps len", hs[0].len, hs[-1].len
-            
 
         self.generate_merge_seq(hs, 1, originalLen, temp_seq, ans)
         start = hs[0].start
         #bestHaps, hapsFromHs = self.find_minimal_MEC([], ans, [], start, clouds_at_index)
-        partBool = False   
 
-        '''
-        if hs[0].len > 10:
-            regionStart = hs[0].end - 10 + 1 # tail 10 of first haps
-            partBool = True    
-
-        else:
-            regionStart = hs[0].start
-
-        if hs[-1].len > 10: # para, can be set self.enumerate_snp_threshold/2
-            regionEnd = hs[-1].start + 10 - 1 # head 10 of last haps
-            partBool = True    
-        else:
-            regionEnd = hs[-1].end
-        '''
         regionStart = hs[0].end
         regionEnd = hs[-1].start
 
-
         bestHaps, hapsFromHs = self.find_minimal_MEC_part_region([], ans, [], start, clouds_at_index, regionStart, regionEnd)
 
-        '''
-        print len(hapsFromHs)
-        if partBool:  # reads support need to updata
-            sys.exit() # I will updata reads at final step
-        '''    
         l = len(hapsFromHs)
         if l == 1:
             #print "only one minimal MEC, fill and merge", hapsFromHs[0].MEC
@@ -645,7 +676,7 @@ class DC(object):
 
     def deal_with_same_MEC(self, h1, h2, bestHaps, clouds_at_index):
         
-        print "deal with same MEC"
+        logging.info( "deal with same MEC" )
         '''
         print "ll"
         hapsFromHs = self.from_two_haps(hs[0], hs[-1], clouds_at_index)
@@ -755,12 +786,6 @@ class DC(object):
             boolKmers = self.k_mers_01[j]
             if self.check_bit_complement(boolKmers, self.k_mers[j], label):
                 #de time
-                '''
-                print j
-                print boolKmers
-                for key in self.k_mers[j]:
-                    print key, len(self.k_mers[j][key])
-                '''
                 if len(temp_seq) == 0:
                     h = haplotype.Haplotype(j) 
                     temp_seq.extend(boolKmers[0])
@@ -769,10 +794,6 @@ class DC(object):
                 elif tools.is_bool_reverse( temp_seq[-self.k+1:], boolKmers[0][:-1] ):
                     temp_seq.append( tools.int_reverse( boolKmers[0][-1] ) )
                 else:
-                    #de time
-                    '''
-                    print j, "kmer break type 1, not satisfy consistency"
-                    '''
                     assert len(temp_seq) != 0
                     if len(temp_seq) != 0:
                         h.set_seq(temp_seq)
@@ -785,14 +806,6 @@ class DC(object):
                     haps.append(h)
                     temp_seq = list()
                     j = j + (self.k - 2) # add this line to make sure ... 23,Jan,2019    
-                #de time
-                '''
-                print j, "kmer break type 2, not satisfy bit-complement"
-                print boolKmers
-                for key in self.k_mers[j]:
-                    print key, len(self.k_mers[j][key])
-                '''    
-
 
             j += 1 # change for loop to while loop   
                 #if len(boolKmers) == 0:
@@ -817,32 +830,15 @@ class DC(object):
         if lenKmer == 0:
             return False
 
-        '''  
-        if label == -1:  #for nanopore
-            curCov = 0
-            for k in boolKmers:
-                #print "kmer detail", k, len(self.k_mers[j][k])
-                curCov += len(kmers[k])     
-            kmer1cov = len( kmers[boolKmers[0]] )
-            if lenKmer >= 2:
-                kmer2cov = len( kmers[boolKmers[1]] )                
-            if ( ( lenKmer >= 2 and tools.is_bool_reverse( boolKmers[0], boolKmers[1] ) ) or
-                 ( lenKmer >= 2 and (kmer1cov >= 3*kmer2cov or kmer1cov >= 0.3*curCov) ) or
-                 ( lenKmer == 1 and kmer1cov >= 2) or
-                 ( lenKmer == 3 and (tools.is_bool_reverse(boolKmers[0], boolKmers[2]) or 
-                                         tools.is_bool_reverse(boolKmers[1], boolKmers[2])) ) ):
-                return True
-            return False
-        '''  
         if label == 1:
-            #if ( ( lenKmer >= 2 and tools.is_bool_reverse( boolKmers[0], boolKmers[1] ) ) or lenKmer == 1 or ( lenKmer==3 and tools.is_bool_reverse(boolKmers[0], boolKmers[2]) ) ): #tools.is_bool_reverse(boolKmers[1], boolKmers[2])) ) ):
             if (lenKmer >= 1): # for those region, all reads come from same haplotype
                 curCov = 0
                 for k in boolKmers:
                     curCov += len(kmers[k]) 
                 kmer1cov = len( kmers[boolKmers[0]] )
                 #if (kmer1cov >= 10 and kmer1cov > curCov*2.0/3) or (lenKmer == 1 and cov):
-                if kmer1cov > curCov*2.0/3:
+                if kmer1cov > curCov*2.0/3 and curCov >=2:
+                #if kmer1cov > curCov*2.0/3:
                     return True
                 return False
 

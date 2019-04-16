@@ -35,7 +35,9 @@ print_clouds(args.parsed_reads, all_clouds_list, data_start, data_end)
 
 dc = DC.DC(args.k, data_start, data_end, all_clouds_list, clouds_at_index, contigs_at_index, max_clouds_length)
 
-haps = dc.run_dc(clouds_at_index)
+#print "aa", args.phase
+
+haps = dc.run_dc(clouds_at_index, args.phase.split('/')[1])
 
 # write output, haplotype phasing result
 out_file = open(args.phase, "w")
