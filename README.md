@@ -8,10 +8,7 @@ DCHap is a fast and accurate haplotype phasing tool for third-generation sequenc
 # Downloading DCHap
 
 To download DCHap, you have to clone the DCHap repository to your machine.
-
-<pre><code>
-git clone https://github.com/yanboANU/Haplotype-phasing.git
-</code></pre>
+<pre><code> git clone https://github.com/yanboANU/Haplotype-phasing.git </code></pre>
 
 # Input Format
 input: chr22.matrix(snp binary matrix) format see tests
@@ -19,11 +16,9 @@ input: chr22.matrix(snp binary matrix) format see tests
 
 # Example Usage
 
-<pre><code>
-cd tests
+<pre><code> cd tests
 python2 /yourpath/dchap.py  --reads chr22.matrix --k 2 --parsed-reads chr22_parsed_fragments --phase chr22_haplotype --assignments chr22_assignments
-python2 /yourpath/dchap-postprocess.py --parsed-reads chr22_parsed_fragments --assignments chr22_assignments --blocks chr22_haplotype --corrected-blocks chr22_post_haplotype
-</code></pre>
+python2 /yourpath/dchap-postprocess.py --parsed-reads chr22_parsed_fragments --assignments chr22_assignments --blocks chr22_haplotype --corrected-blocks chr22_post_haplotype </code></pre>
 
 Phasing result is in chr22_post_haplotype.
 
