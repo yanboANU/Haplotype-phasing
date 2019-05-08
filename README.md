@@ -1,10 +1,7 @@
 # DCHap: A divide-and-conquer haplotype phasing algorithm for third-generation sequencing data
 
-DCHap is a fast and accurate haplotype phasing tool for third-generation sequencing data.
-
-# Dependencies
-
-
+DCHap is a fast and accurate haplotype phasing tool for third-generation sequencing data. It works for both SMRT reads (PacBio) and Oxford Nanopore reads. 
+ 
 # Downloading DCHap
 
 To download DCHap, you have to clone the DCHap repository to your machine.
@@ -12,7 +9,8 @@ To download DCHap, you have to clone the DCHap repository to your machine.
 
 # Input Format
 
-The input of DCHap is a SNP matrix, see tests/chr22.matrix.
+The input of DCHap is a SNP matrix, see tests/chr22.matrix. You can use extractHAIRS tool in HapCUT2 to derive the SNP
+matrix from a BAM file and a VCF file.
 
 # Example Usage
 
