@@ -10,7 +10,7 @@ To download DCHap, you have to clone the DCHap repository to your machine.
 # Input Format
 
 The input of DCHap is a SNP matrix, see tests/chr22.matrix. You can use extractHAIRS tool in HapCUT2 to derive the SNP
-matrix from a BAM file and a VCF file.
+matrix from a BAM file and a VCF file, see https://github.com/vibansal/HapCUT2.
 
 # Example Usage
 
@@ -18,7 +18,7 @@ matrix from a BAM file and a VCF file.
 python2 /yourpath/dchap.py  --reads chr22.matrix --k 2 --parsed-reads chr22_parsed_fragments --phase chr22_haplotype --assignments chr22_assignments
 python2 /yourpath/dchap-postprocess.py --parsed-reads chr22_parsed_fragments --assignments chr22_assignments --blocks chr22_haplotype --corrected-blocks chr22_post_haplotype </code></pre>
 
-Phasing result is in chr22_post_haplotype.
+chr22_post_haplotype stores phasing result. chr22_assignments stores reads partitions.   
 
 # References
 [1] Bansal, Vikas, and Vineet Bafna. "HapCUT: an efficient and accurate algorithm for the haplotype assembly problem." Bioinformatics 24.16 (2008): i153-i159.
