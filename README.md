@@ -4,7 +4,7 @@
  
 # Downloading DCHap
 
-To download **DCHap**, you have to clone the DCHap repository to your machine.
+To download **DCHap**, you have to clone the **DCHap** repository to your machine.
 <pre><code> git clone https://github.com/yanboANU/Haplotype-phasing.git </code></pre>
 
 # Input Format
