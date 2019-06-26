@@ -181,8 +181,9 @@ def clouds_from_refhap(cloud_filename, data_start, data_end):
             continue
         if cloud in all_clouds:
             print cloud.name, cloud.start
-            print all_clouds[cloud.name].name, all_clouds[cloud.name].start
-            print "a read more than one alignment"
+            #print all_clouds[cloud.name].name, all_clouds[cloud.name].start
+            print "warning: a read more than one alignment"
+            print "warning: should keep one reads only have one alignment"
 
             
 
