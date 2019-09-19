@@ -1,0 +1,29 @@
+Supplementary information on commands used to perform the benchmark
+
+Example of using PBSIM(version: 1.0.4) to simulate reads:
+(1)/software/PBSIM-PacBio-Simulator/src/pbsim --depth 10 --length-mean 10000 --accuracy-mean 0.90 --model_qc /software/PBSIM-PacBio-Simulator/data/model_qc_clr /Data/reference/GRCh37_hg19/chr15_2_haplotype.fa
+
+Example of using BWA-MEM(version: 0.7.17) to align reads to reference:
+(2)/software/bwa-0.7.17/bwa mem -x pacbio -t 20 /Data/reference/GRCh37_hg19/chr15.fa sd_0001.fastq > aln.sam
+
+Example of indexing BAM file by SAMTOOLS(version: 1.6):
+(3)/software/samtools/samtools-1.6/samtools view -S -b aln.sam -F4079 -@ 20 > aln.bam
+(4)/software/samtools/samtools-1.6/samtools sort -o aln.sorted.bam -@ 20 aln.bam
+(5)/software/samtools/samtools-1.6/samtools index -@ 30 aln.sorted.bam
+
+Example of getting input matrix by extractHAIRS from HapCUT2:
+(6)/software/HapCUT2/build/extractHAIRS --pacbio 1 --bam aln.sorted.bam --VCF /Data/NA12878_hg19_VCFs/chr15.phased.vcf --out chr15_matrix --ref /Data/reference/GRCh37_hg19/chr15.fa
+
+Example of running FastHare:
+(7)java -cp /software/SIH/SingleIndividualHaplotyper/SIH.jar mpg.molgen.sih.main.SIH -a FastHare chr15_matrix2 ./FastHare.out
+
+Example of running HapCUT2:
+(8)/software/HapCUT2/build/HAPCUT2 --fragments chr15_matrix --vcf /Data/NA12878_hg19_VCFs/chr15.input.vcf --output ./HapCUT2.out
+
+Example of running WhatsHap(version: 0.18):
+(9)whatshap phase --ignore-read-groups -o ./WhatsHap.out /Data/NA12878_hg19_VCFs/chr15.input.vcf aln.sorted.bam
+
+Example of running DCHap:
+(10) python2 /yourpath/dchap.py  --reads chr15_matrix2 --k 2 --parsed-reads chr15_parsed_fragments --phase DCHap.out --assignments chr15_assignments
+(11)python2 /yourpath/dchap-postprocess.py --parsed-reads chr15_parsed_fragments --assignments chr15_assignments
+--blocks DCHap.out --corrected-blocks DCHap_post.out 
